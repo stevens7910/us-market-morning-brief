@@ -47,7 +47,8 @@ DATA_DIR = REPO_ROOT / "public" / "data"
 EDITIONS_DIR = DATA_DIR / "editions"
 INDEX_PATH = DATA_DIR / "index.json"
 
-DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-4-hydrogen")
+DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
+FALLBACK_MODELS = ["gemini-3.1-flash-lite", "gemini-4-hydrogen"]
 PRAGUE_TZ = ZoneInfo("Europe/Prague")
 MAX_ARCHIVE_EDITIONS = 90
 
@@ -155,7 +156,8 @@ def generate_editorial_with_gemini(
     model: str,
     enable_search: bool = True,
 ) -> EditorialGenerationOutput:
-    """Zavolá Gemini Interactions API se strukturovaným výstupem a Google Search groundingem."""
+    """Zavolá Gemini Interactions API se strukturovaným výstupem, Google Search groundingem
+    a automatickým fallbackem na lehčí modely při vyčerpání kvóty (HTTP 429)."""
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise EnvironmentError(
@@ -164,30 +166,62 @@ def generate_editorial_with_gemini(
 
     client = genai.Client(api_key=api_key)
 
-    request_kwargs: dict = {
-        "model": model,
-        "system_instruction": SYSTEM_INSTRUCTION,
-        "input": prompt,
-        "response_format": {
-            "type": "text",
-            "mime_type": "application/json",
-            "schema": EditorialGenerationOutput.model_json_schema(),
-        },
-        "store": False,
-    }
-    if enable_search:
-        request_kwargs["tools"] = [{"type": "google_search"}]
+    # Sestavíme seznam kandidátů: primární model + fallbacky (bez duplicit)
+    models_to_try = [model] + [m for m in FALLBACK_MODELS if m != model]
+    attempts: list[tuple[str, bool]] = []
+    for m in models_to_try:
+        if enable_search:
+            attempts.append((m, True))
+        attempts.append((m, False))
 
-    logger.info("Volám Gemini Interactions API (model=%s, google_search=%s)...", model, enable_search)
-    interaction = client.interactions.create(**request_kwargs)
+    last_error: Exception | None = None
+    for candidate_model, use_search in attempts:
+        request_kwargs: dict = {
+            "model": candidate_model,
+            "system_instruction": SYSTEM_INSTRUCTION,
+            "input": prompt,
+            "response_format": {
+                "type": "text",
+                "mime_type": "application/json",
+                "schema": EditorialGenerationOutput.model_json_schema(),
+            },
+            "store": False,
+        }
+        if use_search:
+            request_kwargs["tools"] = [{"type": "google_search"}]
 
-    output_text = interaction.output_text
-    if not output_text:
-        raise RuntimeError(
-            f"Gemini vrátil prázdný výstup (status={getattr(interaction, 'status', 'unknown')})."
+        logger.info(
+            "Volám Gemini Interactions API (model=%s, google_search=%s)...",
+            candidate_model,
+            use_search,
         )
+        try:
+            interaction = client.interactions.create(**request_kwargs)
+            output_text = interaction.output_text
+            if not output_text:
+                raise RuntimeError(
+                    f"Gemini vrátil prázdný výstup (status={getattr(interaction, 'status', 'unknown')})."
+                )
+            return EditorialGenerationOutput.model_validate_json(output_text)
+        except Exception as exc:
+            last_error = exc
+            err_msg = str(exc)
+            is_quota_or_unavailable = any(
+                token in err_msg.lower()
+                for token in ("429", "too_many_requests", "quota", "not_found", "404", "permission")
+            )
+            if is_quota_or_unavailable:
+                logger.warning(
+                    "Model %s (google_search=%s) selhal (%s). Zkouším další variantu...",
+                    candidate_model,
+                    use_search,
+                    type(exc).__name__,
+                )
+                continue
+            raise
 
-    return EditorialGenerationOutput.model_validate_json(output_text)
+    assert last_error is not None
+    raise last_error
 
 
 def update_archive_index(edition: EditionData) -> list[EditionIndexItem]:

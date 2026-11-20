@@ -34,7 +34,7 @@ MACRO_RSS_FEEDS: list[tuple[str, str]] = [
     ("CNBC Top News", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"),
     ("CNBC Markets", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258"),
     ("MarketWatch Top Stories", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
-    ("Yahoo Finance News", "https://finance.yahoo.com/news/rssindex"),
+    ("Investing.com US Markets", "https://www.investing.com/rss/news_25.rss"),
 ]
 
 USER_AGENT = "USMarketMorningBrief/1.0 (+https://github.com)"
