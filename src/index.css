@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #FFF1E5;
+    color: #1A1A1A;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #FFF1E5;
+    color: #1A1A1A;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  /* Jemný redakční drop-cap pro první odstavec hlavního příběhu */
+  .editorial-lead-paragraph::first-letter {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 600;
+    font-size: 3.1rem;
+    line-height: 0.85;
+    float: left;
+    padding-right: 0.45rem;
+    padding-top: 0.25rem;
+    color: #1A1A1A;
+  }
+
+  /* Skrytí scrollbaru u horizontální tržní lišty na mobilu */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Redakční jemná dvojitá linka jako v tištěném FT */
+.ft-double-rule {
+  border-top: 2px solid #1A1A1A;
+  border-bottom: 1px solid #1A1A1A;
+  height: 5px;
+}

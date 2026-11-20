@@ -1,0 +1,16 @@
+[
+  {
+    "edition_date": "2026-11-20",
+    "headline": "Výsledky Nvidie drží AI cyklus v chodu, ale rostoucí výnosy 10Y Treasuries brzdí šířku rally",
+    "market_regime": "Selective Risk-On",
+    "affected_tickers": ["NVDA", "MSFT", "TSM", "AVGO", "JPM"],
+    "has_critical_watchlist_event": true
+  },
+  {
+    "edition_date": "2026-11-19",
+    "headline": "Jestřábí zápis z FOMC tlumí sázky na prosincové snížení sazeb; defenzivní sektory posilují",
+    "market_regime": "Cautious / Rates-Driven",
+    "affected_tickers": ["UNH", "AAPL", "XOM", "MS", "LLY"],
+    "has_critical_watchlist_event": false
+  }
+]

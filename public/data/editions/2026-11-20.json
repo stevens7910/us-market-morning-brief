@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "edition_date": "2026-11-20",
+    "generated_at_cet": "06:42 CET",
+    "market_regime": "Selective Risk-On",
+    "headline": "Výsledky Nvidie drží AI cyklus v chodu, ale rostoucí výnosy 10Y Treasuries brzdí šířku rally",
+    "reading_time_minutes": 4
+  },
+  "notification_payload": {
+    "short_title": "NVDA překonala konsenzus, US 10Y míří k 4,48 %",
+    "top_bullets": [
+      "Nvidia doručila meziroční růst tržeb datových center o 68 % a potvrdila plné vyprodání kapacity architektury Rubin na první pololetí 2027.",
+      "Výnos amerického desetiletého dluhopisu vzrostl o +6 bp na 4,48 % po silnějších datech z trhu práce, což tlačí na valuace softwaru a malých firem (Russell 2000 -0,74 %).",
+      "Pozor v 15:45 CET na předběžné indexy S&P Global PMI — nečekané zrychlení cenové složky ve službách by mohlo spustit další vlnu přeceňování sazeb Fedu."
+    ],
+    "has_critical_watchlist_event": true
+  },
+  "market_snapshot": [
+    {
+      "symbol": "SPX",
+      "label": "S&P 500",
+      "value": "6 142,80",
+      "change_pct": 0.42
+    },
+    {
+      "symbol": "NDX",
+      "label": "Nasdaq 100",
+      "value": "21 895,15",
+      "change_pct": 0.89
+    },
+    {
+      "symbol": "DJI",
+      "label": "Dow Jones",
+      "value": "44 210,40",
+      "change_pct": -0.11
+    },
+    {
+      "symbol": "RUT",
+      "label": "Russell 2000",
+      "value": "2 318,60",
+      "change_pct": -0.74
+    },
+    {
+      "symbol": "US10Y",
+      "label": "US 10Y Yield",
+      "value": "4,48 %",
+      "change_bp": 6.2
+    },
+    {
+      "symbol": "VIX",
+      "label": "CBOE VIX",
+      "value": "14,85",
+      "change_pct": -3.15
+    },
+    {
+      "symbol": "DXY",
+      "label": "US Dollar Index",
+      "value": "106,42",
+      "change_pct": 0.28
+    }
+  ],
+  "lead_story": {
+    "title": "Výsledky Nvidie drží AI cyklus v chodu, ale rostoucí výnosy 10Y Treasuries brzdí šířku rally",
+    "summary_paragraphs": [
+      "Americké akcie vstupují do páteční seance v rozpolceném rozpoložení. Polovodičový sektor včera večer uklidnila kvartální čísla Nvidie, která překonala odhady na tržbách i hrubé marži (73,4 %) a rozptýlila obavy ze zpoždění dodávek nové generace akcelerátorů. Futures na Nasdaq 100 v pre-marketu přidávají téměř 0,9 % a táhnou vzhůru i dodavatelský řetězec kolem TSMC a Broadcomu.",
+      "Pod povrchem indexů však sílí tlak z dluhopisového trhu. Nečekaně nízký počet týdenních žádostí o podporu v nezaměstnanosti (211 tis. oproti konsenzu 222 tis.) potvrdil odolnost americké ekonomiky a posunul výnos desetiletých Treasuries o 6 bazických bodů výše k hranici 4,48 %. Trh úrokových swapů tak nadále snižuje pravděpodobnost agresivnějšího uvolňování měnové politiky v prvním čtvrtletí příštího roku.",
+      "Výsledkem je výrazná rotace zpět do vysoce ziskových technologických megacapů s čistou hotovostí na rozvaze, zatímco cyklické menší společnosti a úrokově citlivé reality ztrácejí. Pro dnešní odpoledne bude klíčové, zda předběžné listopadové PMI potvrdí dezinflační trend ve službách — bez toho zůstane prostor pro širší růst S&P 500 omezený."
+    ],
+    "second_order_effects": [
+      "Hyperscalers (MSFT, META, AMZN) čelí menšímu tlaku na návratnost CAPEX v krátkém horizontu, ale trh začne v Q1 2027 přísněji sledovat tempo monetizace cloudových AI služeb.",
+      "Vyšší dlouhý konec výnosové křivky (US 10Y blízko 4,50 %) podporuje čisté úrokové marže velkých amerických bank (JPM, BAC), avšak zdražuje refinancování u středně velkých firem v indexu Russell 2000.",
+      "Silnější dolar (DXY nad 106,4) vytváří lehký měnový protivítr pro nadnárodní spotřebitelské a průmyslové exportéry s vysokým podílem tržeb mimo USA."
+    ],
+    "affected_tickers": ["NVDA", "MSFT", "TSM", "AVGO", "JPM"],
+    "sources": [
+      {
+        "name": "Financial Times — Markets",
+        "url": "https://www.ft.com/markets"
+      },
+      {
+        "name": "Bloomberg — US Treasuries & Tech",
+        "url": "https://www.bloomberg.com/markets"
+      },
+      {
+        "name": "SEC Filing — NVIDIA Form 8-K",
+        "url": "https://www.sec.gov/edgar/browse/?CIK=0001045810"
+      }
+    ]
+  },
+  "watchlist_updates": [
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "Polovodiče",
+      "signal_score": 5,
+      "sentiment": "Bullish",
+      "event_type": "Výsledky & Výhled",
+      "headline": "Tržby datových center překonaly konsenzus o 7 %, management zvedl výhled hrubých marží",
+      "analysis": "Společnost reportovala čtvrtletní tržby 48,2 mld. USD a upravený zisk na akcii 1,18 USD (konsenzus 1,09 USD). Klíčovým detailem konferenčního hovoru bylo potvrzení, že přechod na racková řešení nové generace probíhá bez poklesu výtěžnosti a hrubá marže se ve fiskálním Q1 vrátí nad 74 %. Zároveň prudce roste podíl suverénních AI zakázek mimo tradiční čtveřici amerických hyperscalerů.",
+      "thesis_impact": "Zásadní potvrzení jádrové teze: poptávka po AI infrastruktuře se diverzifikuje a maržová odolnost eliminuje hlavní medvědí argument pro rok 2027.",
+      "sources": [
+        {
+          "name": "NVIDIA Investor Relations",
+          "url": "https://investor.nvidia.com/"
+        },
+        {
+          "name": "Reuters — Semiconductors",
+          "url": "https://www.reuters.com/technology/"
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Cloud & Software",
+      "signal_score": 4,
+      "sentiment": "Bullish",
+      "event_type": "Infrastruktura & CAPEX",
+      "headline": "Azure získává prioritní alokaci akcelerátorů a rozšiřuje smlouvy na jadernou energii v USA",
+      "analysis": "Podle zdrojů z dodavatelského řetězce si Microsoft zajistil přednostní dodávky nových GPU klastrů pro dvě nová datová centra ve Virginii a Texasu. Současně uzavřel 15letou smlouvu na odběr bezemisní elektřiny, čímž odstraňuje hlavní úzké hrdlo, které v minulém kvartálu brzdilo rychlejší růst Azure AI.",
+      "thesis_impact": "Snižuje exekuční riziko v divizi Intelligent Cloud a zvyšuje pravděpodobnost zrychlení růstu Azure nad 35 % y/y v příštích dvou kvartálech.",
+      "sources": [
+        {
+          "name": "Wall Street Journal — Tech",
+          "url": "https://www.wsj.com/tech"
+        }
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "company_name": "Broadcom Inc.",
+      "sector": "Polovodiče",
+      "signal_score": 3,
+      "sentiment": "Bullish",
+      "event_type": "Sektorový přenos",
+      "headline": "Rostoucí hustota AI racků zvyšuje poptávku po síťových přepínačích Tomahawk a zakázkových ASIC",
+      "analysis": "Výsledky Nvidie a komentáře k rozšiřování velkých trénovacích klastrů přímo podporují síťovou divizi Broadcomu. Analytici upozorňují na rostoucí poměr síťových komponent na jeden GPU uzel, což vytváří stabilní druhou nohu růstu vedle vlastních XPU čipů pro velké technologické klienty.",
+      "thesis_impact": "Pozitivní sekundární potvrzení bez nutnosti měnit odhady; klíčový test přijde s vlastními výsledky Broadcomu začátkem prosince.",
+      "sources": [
+        {
+          "name": "Barron's — Tech Trader",
+          "url": "https://www.barrons.com/"
+        }
+      ]
+    },
+    {
+      "ticker": "JPM",
+      "company_name": "JPMorgan Chase & Co.",
+      "sector": "Finance",
+      "signal_score": 3,
+      "sentiment": "Neutral",
+      "event_type": "Makro & Regulace",
+      "headline": "Strmější výnosová křivka podporuje NII, ale investiční bankovnictví naráží na vysokou srovnávací základnu",
+      "analysis": "Posun výnosu US 10Y k 4,48 % zlepšuje výhled čistých úrokových výnosů (NII) pro rok 2027. Na druhou stranu vedení banky na včerejší konferenci mírnilo přehnaný optimismus ohledně poplatků z M&A poradenství v Q4, kde se část transakcí posouvá až do nového roku.",
+      "thesis_impact": "Valuace na 2,3x TBV již většinu dobrých zpráv započítává; pozice zůstává stabilním defenzivním jádrem bez nového katalyzátoru.",
+      "sources": [
+        {
+          "name": "Financial Times — Banks",
+          "url": "https://www.ft.com/banks"
+        }
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "company_name": "Taiwan Semiconductor Mfg.",
+      "sector": "Polovodiče",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Rutinní provozní zpráva",
+      "headline": "Továrna v Arizoně dokončila standardní bezpečnostní audit před plánovaným náběhem druhé fáze",
+      "analysis": "Lokální média v Arizoně informovala o úspěšném dokončení pravidelné inspekce vodohospodářského systému ve fabu TSMC. Zpráva je plně v souladu s dříve oznámeným harmonogramem a nemění časování náběhu 2nm výroby ani odhady kapitálových výdajů.",
+      "thesis_impact": "Žádný dopad na investiční tezi — jde o rutinní provozní milník bez překvapení.",
+      "sources": [
+        {
+          "name": "Nikkei Asia",
+          "url": "https://asia.nikkei.com/"
+        }
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "sector": "Spotřební technologie",
+      "signal_score": 1,
+      "sentiment": "Neutral",
+      "event_type": "Tržní šum / Spekulace",
+      "headline": "Spekulace z asijských fór o barevných variantách příští generace iPhonu",
+      "analysis": "Technologické blogy citují neověřený příspěvek z dodavatelského řetězce o testování dvou nových odstínů titanového rámu pro podzim 2027. Zpráva neobsahuje žádné údaje o objemech objednávek, průměrné prodejní ceně ani vývoji služeb.",
+      "thesis_impact": "Čistý šum bez jakékoli informační hodnoty pro fundamentální ocenění.",
+      "sources": [
+        {
+          "name": "MacRumors",
+          "url": "https://www.macrumors.com/"
+        }
+      ]
+    }
+  ],
+  "today_calendar": {
+    "macro_events": [
+      {
+        "time_cet": "15:45",
+        "event": "US S&P Global Manufacturing PMI (Předběžný, lis.)",
+        "importance": "High",
+        "consensus": "49,8",
+        "previous": "49,1"
+      },
+      {
+        "time_cet": "15:45",
+        "event": "US S&P Global Services PMI (Předběžný, lis.)",
+        "importance": "High",
+        "consensus": "54,6",
+        "previous": "55,0"
+      },
+      {
+        "time_cet": "16:00",
+        "event": "Index spotřebitelské důvěry Univ. of Michigan (Finální)",
+        "importance": "Medium",
+        "consensus": "72,4",
+        "previous": "72,1"
+      },
+      {
+        "time_cet": "16:00",
+        "event": "Inflační očekávání UoM (5letý horizont)",
+        "importance": "Medium",
+        "consensus": "3,0 %",
+        "previous": "3,1 %"
+      },
+      {
+        "time_cet": "19:00",
+        "event": "Baker Hughes — počet aktivních ropných vrtů v USA",
+        "importance": "Low",
+        "consensus": "481",
+        "previous": "479"
+      }
+    ],
+    "watchlist_earnings": [
+      {
+        "ticker": "DE",
+        "timing": "Před otevřením (BMO)",
+        "eps_estimate": "$4,12"
+      },
+      {
+        "ticker": "ROST",
+        "timing": "Po uzavření (AMC)",
+        "eps_estimate": "$1,48"
+      },
+      {
+        "ticker": "INTU",
+        "timing": "Po uzavření (AMC)",
+        "eps_estimate": "$2,64"
+      }
+    ]
+  }
+}

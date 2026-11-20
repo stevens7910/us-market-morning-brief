@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "edition_date": "2026-11-19",
+    "generated_at_cet": "06:38 CET",
+    "market_regime": "Cautious / Rates-Driven",
+    "headline": "Jestřábí zápis z FOMC tlumí sázky na prosincové snížení sazeb; defenzivní sektory posilují",
+    "reading_time_minutes": 4
+  },
+  "notification_payload": {
+    "short_title": "Zápis FOMC zchladil trh; rotace do zdravotnictví a energií",
+    "top_bullets": [
+      "Zápis z posledního zasedání FOMC ukázal, že většina členů preferuje pomalejší tempo snižování sazeb, dokud jádrová inflace ve službách neklesne blíže k 2,5 %.",
+      "Defenzivní zdravotnictví (XLV +1,1 %) a energetika (XLE +0,9 %) překonaly zbytek trhu, zatímco technologický sektor vyčkával na večerní výsledky Nvidie.",
+      "Eli Lilly oznámila pozitivní předběžná data z fáze III pro perorální GLP-1 kandidát, což posiluje její náskok v obezitologii."
+    ],
+    "has_critical_watchlist_event": false
+  },
+  "market_snapshot": [
+    {
+      "symbol": "SPX",
+      "label": "S&P 500",
+      "value": "6 117,10",
+      "change_pct": -0.24
+    },
+    {
+      "symbol": "NDX",
+      "label": "Nasdaq 100",
+      "value": "21 702,00",
+      "change_pct": -0.41
+    },
+    {
+      "symbol": "DJI",
+      "label": "Dow Jones",
+      "value": "44 259,05",
+      "change_pct": 0.18
+    },
+    {
+      "symbol": "RUT",
+      "label": "Russell 2000",
+      "value": "2 335,90",
+      "change_pct": -0.52
+    },
+    {
+      "symbol": "US10Y",
+      "label": "US 10Y Yield",
+      "value": "4,42 %",
+      "change_bp": 4.8
+    },
+    {
+      "symbol": "VIX",
+      "label": "CBOE VIX",
+      "value": "15,33",
+      "change_pct": 4.10
+    },
+    {
+      "symbol": "DXY",
+      "label": "US Dollar Index",
+      "value": "106,12",
+      "change_pct": 0.35
+    }
+  ],
+  "lead_story": {
+    "title": "Jestřábí zápis z FOMC tlumí sázky na prosincové snížení sazeb; defenzivní sektory posilují",
+    "summary_paragraphs": [
+      "Včerejší zveřejnění zápisu z listopadového zasedání amerického Fedu (FOMC Minutes) přineslo chladnější tón, než akciové trhy očekávaly. Řada guvernérů zdůraznila, že fiskální impulsy a napjatý trh práce zvyšují riziko znovuoživení cenových tlaků, a proto není důvod spěchat s dalším snižováním základní úrokové sazby.",
+      "Pravděpodobnost prosincového snížení sazeb o 25 bazických bodů podle nástroje CME FedWatch klesla ze 64 % na 47 %. Desetileté americké výnosy se posunuly výše o téměř 5 bazických bodů na 4,42 %, což přirozeně zatížilo růstové tituly s dlouhou durací.",
+      "Kapitál se v průběhu seance přesouval do sektorů se stabilním cash-flow a nižší citlivostí na diskontní sazbu — především do zdravotnictví, pojišťoven a integrovaných energetických společností. Pozornost celého trhu se však zároveň soustředí na večerní výsledky Nvidie, které mohou krátkodobě přebít makroekonomickou nervozitu."
+    ],
+    "second_order_effects": [
+      "Pomalý pokles sazeb prodlužuje atraktivitu fondů peněžního trhu (výnosy kolem 4,5 %), čímž zpomaluje příliv retailové hotovosti do rizikovějších segmentů akcií.",
+      "Zdravotnické tituly (LLY, UNH) těží z kombinace defenzivního profilu a jasné viditelnosti zisků pro rok 2027.",
+      "Vyšší reálné výnosy brzdí cenu zlata a vyvíjejí tlak na měny rozvíjejících se trhů."
+    ],
+    "affected_tickers": ["UNH", "AAPL", "XOM", "MS", "LLY"],
+    "sources": [
+      {
+        "name": "Federal Reserve — FOMC Minutes",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      },
+      {
+        "name": "Financial Times — US Economy",
+        "url": "https://www.ft.com/us-economy"
+      }
+    ]
+  },
+  "watchlist_updates": [
+    {
+      "ticker": "LLY",
+      "company_name": "Eli Lilly and Company",
+      "sector": "Zdravotnictví",
+      "signal_score": 4,
+      "sentiment": "Bullish",
+      "event_type": "Klinická data",
+      "headline": "Perorální GLP-1 kandidát splnil primární cíle fáze III s příznivým bezpečnostním profilem",
+      "analysis": "Společnost oznámila, že její perorální léčivo orforglipron dosáhlo v 72týdenní studii průměrného úbytku hmotnosti 15,8 % při srovnatelné snášenlivosti s injekčními přípravky. Perorální forma zásadně snižuje výrobní složitost (odpadá chladicí řetězec i injekční pera) a rozšiřuje adresovatelný trh na primární péči.",
+      "thesis_impact": "Upevňuje dlouhodobý konkurenční příkop Eli Lilly v metabolických onemocněních a otevírá prostor pro další růst marží od roku 2028.",
+      "sources": [
+        {
+          "name": "Eli Lilly Press Release",
+          "url": "https://investor.lilly.com/"
+        }
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "company_name": "Exxon Mobil Corporation",
+      "sector": "Energetika",
+      "signal_score": 3,
+      "sentiment": "Bullish",
+      "event_type": "Produkce & Cash-Flow",
+      "headline": "Navýšení produkce v Guyaně a Permské pánvi drží break-even cenu ropy pod 35 USD/barel",
+      "analysis": "Aktualizace provozních cílů potvrzuje, že integrace aktiv v Permské pánvi přináší o 12 % vyšší synergie, než management původně modeloval. Volné cash-flow pokrývá jak dividendu, tak roční zpětný odkup akcií v objemu 20 mld. USD i při konzervativní ceně ropy Brent kolem 70 USD.",
+      "thesis_impact": "Atraktivní protiinflační zajištění v portfoliu při přetrvávajícím jestřábím tónu Fedu.",
+      "sources": [
+        {
+          "name": "Reuters — Energy",
+          "url": "https://www.reuters.com/business/energy/"
+        }
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "company_name": "UnitedHealth Group",
+      "sector": "Zdravotnictví",
+      "signal_score": 3,
+      "sentiment": "Bearish",
+      "event_type": "Regulační riziko",
+      "headline": "Ministerstvo spravedlnosti rozšiřuje vyžádání dokumentů v oblasti vertikální integrace Optum",
+      "analysis": "Regulátor si vyžádal doplňující podklady k cenotvorbě mezi pojišťovací divizí UnitedHealthcare a poskytovatelskou sítí Optum. Ačkoliv právní procesy v tomto sektoru trvají roky, téma zvyšuje krátkodobou rizikovou prémii a může dočasně limitovat násobek P/E.",
+      "thesis_impact": "Zvyšuje regulační nejistotu; vyžaduje pečlivé sledování v příštím kvartálu, zatím bez přímého zásahu do letošního zisku.",
+      "sources": [
+        {
+          "name": "Wall Street Journal — Health",
+          "url": "https://www.wsj.com/health"
+        }
+      ]
+    },
+    {
+      "ticker": "MS",
+      "company_name": "Morgan Stanley",
+      "sector": "Finance",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Komentář analytiků",
+      "headline": "Dílčí úprava cílové ceny jedním z brokerů z 132 USD na 135 USD bez změny doporučení",
+      "analysis": "Analytický dům kosmeticky zvedl cílovou cenu na základě přepočtu spravovaných aktiv (AUM) ve Wealth Managementu po říjnovém růstu trhů. Doporučení zůstává na stupni Equal-Weight.",
+      "thesis_impact": "Minimální informační hodnota — jde o mechanický přepočet bez nové teze.",
+      "sources": [
+        {
+          "name": "Bloomberg — Financials",
+          "url": "https://www.bloomberg.com/markets"
+        }
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "sector": "Spotřební technologie",
+      "signal_score": 1,
+      "sentiment": "Neutral",
+      "event_type": "Tržní šum",
+      "headline": "Otevření nové vlajkové prodejny v jihovýchodní Asii",
+      "analysis": "Apple slavnostně otevřel novou kamennou prodejnu v Bangkoku. Událost má marketingový význam pro značku, avšak sama o sobě nepředstavuje měřitelný posun v globálních tržbách.",
+      "thesis_impact": "Bez dopadu na investiční tezi.",
+      "sources": [
+        {
+          "name": "Apple Newsroom",
+          "url": "https://www.apple.com/newsroom/"
+        }
+      ]
+    }
+  ],
+  "today_calendar": {
+    "macro_events": [
+      {
+        "time_cet": "14:30",
+        "event": "Týdenní žádosti o podporu v nezaměstnanosti (Initial Jobless Claims)",
+        "importance": "High",
+        "consensus": "222 tis.",
+        "previous": "217 tis."
+      },
+      {
+        "time_cet": "14:30",
+        "event": "Index výrobní aktivity Philadelphia Fed (listopad)",
+        "importance": "Medium",
+        "consensus": "7,5",
+        "previous": "10,3"
+      },
+      {
+        "time_cet": "16:00",
+        "event": "Prodeje starších domů v USA (Existing Home Sales, meziměsíčně)",
+        "importance": "Medium",
+        "consensus": "+1,8 %",
+        "previous": "-1,0 %"
+      }
+    ],
+    "watchlist_earnings": [
+      {
+        "ticker": "WMT",
+        "timing": "Před otevřením (BMO)",
+        "eps_estimate": "$0,54"
+      },
+      {
+        "ticker": "NVDA",
+        "timing": "Po uzavření (AMC)",
+        "eps_estimate": "$1,09"
+      }
+    ]
+  }
+}
