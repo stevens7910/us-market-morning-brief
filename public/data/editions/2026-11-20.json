@@ -1,17 +1,17 @@
 {
   "meta": {
     "edition_date": "2026-11-20",
-    "generated_at_cet": "06:42 CET",
-    "market_regime": "Selective Risk-On",
-    "headline": "Výsledky Nvidie drží AI cyklus v chodu, ale rostoucí výnosy 10Y Treasuries brzdí šířku rally",
+    "generated_at_cet": "13:16 CET",
+    "market_regime": "Cautious / Rates-Driven",
+    "headline": "Nervozita na Wall Street roste: Výprodej v polovodičích a obavy o udržitelnost AI cyklu táhnou indexy dolů",
     "reading_time_minutes": 4
   },
   "notification_payload": {
-    "short_title": "NVDA překonala konsenzus, US 10Y míří k 4,48 %",
+    "short_title": "Trhy pod tlakem: Výprodej v technologiích, výnosy 10Y US bondů na 5,05 %",
     "top_bullets": [
-      "Nvidia doručila meziroční růst tržeb datových center o 68 % a potvrdila plné vyprodání kapacity architektury Rubin na první pololetí 2027.",
-      "Výnos amerického desetiletého dluhopisu vzrostl o +6 bp na 4,48 % po silnějších datech z trhu práce, což tlačí na valuace softwaru a malých firem (Russell 2000 -0,74 %).",
-      "Pozor v 15:45 CET na předběžné indexy S&P Global PMI — nečekané zrychlení cenové složky ve službách by mohlo spustit další vlnu přeceňování sazeb Fedu."
+      "S&P 500 se propadl o -2,02 % na 7 175,83 bodu, přičemž Nasdaq 100 oslabil o -2,21 % vlivem přetrvávajících obav z valuací v sektoru umělé inteligence.",
+      "Výnos 10letých amerických dluhopisů se drží na zvýšené úrovni 5,05 %, což nadále komprimuje valuace růstových a technologických aktiv.",
+      "Index strachu CBOE VIX vyskočil o +5,03 % na 29,87 bodu, což signalizuje rostoucí nervozitu na straně institucionálních investorů."
     ],
     "has_critical_watchlist_event": true
   },
@@ -19,71 +19,72 @@
     {
       "symbol": "SPX",
       "label": "S&P 500",
-      "value": "6 142,80",
-      "change_pct": 0.42
+      "value": "7 175,83",
+      "change_pct": -2.02
     },
     {
       "symbol": "NDX",
       "label": "Nasdaq 100",
-      "value": "21 895,15",
-      "change_pct": 0.89
+      "value": "26 517,05",
+      "change_pct": -2.21
     },
     {
       "symbol": "DJI",
       "label": "Dow Jones",
-      "value": "44 210,40",
-      "change_pct": -0.11
+      "value": "49 097,06",
+      "change_pct": -2.19
     },
     {
       "symbol": "RUT",
       "label": "Russell 2000",
-      "value": "2 318,60",
-      "change_pct": -0.74
+      "value": "2 655,11",
+      "change_pct": -2.18
     },
     {
       "symbol": "US10Y",
       "label": "US 10Y Yield",
-      "value": "4,48 %",
-      "change_bp": 6.2
+      "value": "5,05 %",
+      "change_bp": -1.4
     },
     {
       "symbol": "VIX",
       "label": "CBOE VIX",
-      "value": "14,85",
-      "change_pct": -3.15
+      "value": "29,87",
+      "change_pct": 5.03
     },
     {
       "symbol": "DXY",
       "label": "US Dollar Index",
-      "value": "106,42",
-      "change_pct": 0.28
+      "value": "103,89",
+      "change_pct": -0.01
     }
   ],
   "lead_story": {
-    "title": "Výsledky Nvidie drží AI cyklus v chodu, ale rostoucí výnosy 10Y Treasuries brzdí šířku rally",
+    "title": "Nervozita na Wall Street roste: Výprodej v polovodičích a obavy o udržitelnost AI cyklu táhnou indexy dolů",
     "summary_paragraphs": [
-      "Americké akcie vstupují do páteční seance v rozpolceném rozpoložení. Polovodičový sektor včera večer uklidnila kvartální čísla Nvidie, která překonala odhady na tržbách i hrubé marži (73,4 %) a rozptýlila obavy ze zpoždění dodávek nové generace akcelerátorů. Futures na Nasdaq 100 v pre-marketu přidávají téměř 0,9 % a táhnou vzhůru i dodavatelský řetězec kolem TSMC a Broadcomu.",
-      "Pod povrchem indexů však sílí tlak z dluhopisového trhu. Nečekaně nízký počet týdenních žádostí o podporu v nezaměstnanosti (211 tis. oproti konsenzu 222 tis.) potvrdil odolnost americké ekonomiky a posunul výnos desetiletých Treasuries o 6 bazických bodů výše k hranici 4,48 %. Trh úrokových swapů tak nadále snižuje pravděpodobnost agresivnějšího uvolňování měnové politiky v prvním čtvrtletí příštího roku.",
-      "Výsledkem je výrazná rotace zpět do vysoce ziskových technologických megacapů s čistou hotovostí na rozvaze, zatímco cyklické menší společnosti a úrokově citlivé reality ztrácejí. Pro dnešní odpoledne bude klíčové, zda předběžné listopadové PMI potvrdí dezinflační trend ve službách — bez toho zůstane prostor pro širší růst S&P 500 omezený."
+      "Americké finanční trhy čelí silnému prodejnímu tlaku, který včera odpoledne vyústil v plošný pokles hlavních indexů. S&P 500 oslabil o -2,02 % na 7 175,83 bodu a technologický Nasdaq 100 ztratil -2,21 %, když se uzavřel na 26 517,05 bodu. Investoři přehodnocují rizikovou prémii v sektoru umělé inteligence, k čemuž přispívají jak rostoucí právní a exekuční rizika kolem klíčových hráčů, tak napjaté makroekonomické podmínky.",
+      "Výnosy desetiletých amerických státních dluhopisů (US10Y) setrvávají na úrovni 5,05 %, což představuje zásadní překážku pro udržení vysokých multiplikátorů technologických společností. Vyšší bezriziková sazba nutí fondy k přecenění budoucích peněžních toků a přesunu kapitálu směrem k defenzivnějším sektorům a hotovosti, což reflektuje i skok indexu VIX o +5,03 % na 29,87 bodu.",
+      "Současná tržní dynamika ukazuje na konec bezmyšlenkovitého financování technologického sektoru („open checkbook is over“). Zatímco poptávka po pokročitém hardwaru a paměťových čipech zůstává robustní, trh začíná přísně rozlišovat mezi společnostmi schopnými generovat okamžitou reálnou návratnost investic a těmi, které spoléhají pouze na budoucí sliby."
     ],
     "second_order_effects": [
-      "Hyperscalers (MSFT, META, AMZN) čelí menšímu tlaku na návratnost CAPEX v krátkém horizontu, ale trh začne v Q1 2027 přísněji sledovat tempo monetizace cloudových AI služeb.",
-      "Vyšší dlouhý konec výnosové křivky (US 10Y blízko 4,50 %) podporuje čisté úrokové marže velkých amerických bank (JPM, BAC), avšak zdražuje refinancování u středně velkých firem v indexu Russell 2000.",
-      "Silnější dolar (DXY nad 106,4) vytváří lehký měnový protivítr pro nadnárodní spotřebitelské a průmyslové exportéry s vysokým podílem tržeb mimo USA."
+      "Komprese valuací v technologickém sektoru se přenáší do primárních emisí, kde nové IPO navzdory silnému debutu narážejí na opatrnou likviditu.",
+      "Vyšší úrokové sazby na dluhopisovém trhu prodražují financování energetických projektů pro datová centra, což dopadá na utility zaměřené na AI."
     ],
-    "affected_tickers": ["NVDA", "MSFT", "TSM", "AVGO", "JPM"],
+    "affected_tickers": [
+      "NVDA",
+      "MSFT",
+      "GOOGL",
+      "MU",
+      "CEG"
+    ],
     "sources": [
       {
-        "name": "Financial Times — Markets",
-        "url": "https://www.ft.com/markets"
+        "name": "CNBC Top News",
+        "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
       },
       {
-        "name": "Bloomberg — US Treasuries & Tech",
-        "url": "https://www.bloomberg.com/markets"
-      },
-      {
-        "name": "SEC Filing — NVIDIA Form 8-K",
-        "url": "https://www.sec.gov/edgar/browse/?CIK=0001045810"
+        "name": "MarketWatch Top Stories",
+        "url": "https://www.marketwatch.com/story/anthropics-stock-surges-in-its-debut-and-the-rest-of-the-market-dives-anyway-19671218?mod=mw_rss_topstories"
       }
     ]
   },
@@ -91,106 +92,123 @@
     {
       "ticker": "NVDA",
       "company_name": "NVIDIA Corporation",
-      "sector": "Polovodiče",
+      "sector": "Technologie",
       "signal_score": 5,
-      "sentiment": "Bullish",
+      "sentiment": "Bearish",
       "event_type": "Výsledky & Výhled",
-      "headline": "Tržby datových center překonaly konsenzus o 7 %, management zvedl výhled hrubých marží",
-      "analysis": "Společnost reportovala čtvrtletní tržby 48,2 mld. USD a upravený zisk na akcii 1,18 USD (konsenzus 1,09 USD). Klíčovým detailem konferenčního hovoru bylo potvrzení, že přechod na racková řešení nové generace probíhá bez poklesu výtěžnosti a hrubá marže se ve fiskálním Q1 vrátí nad 74 %. Zároveň prudce roste podíl suverénních AI zakázek mimo tradiční čtveřici amerických hyperscalerů.",
-      "thesis_impact": "Zásadní potvrzení jádrové teze: poptávka po AI infrastruktuře se diverzifikuje a maržová odolnost eliminuje hlavní medvědí argument pro rok 2027.",
+      "headline": "Prohlubující se pokles akcií po výsledcích a rostoucí regulatorní a právní tlak",
+      "analysis": "Akcie NVIDIA oslabily o -3,30 % na $145,98 v návaznosti na pokračující vlnu výprodejů po nedávném zveřejnění výsledků. Současně narůstají právní a exekuční rizika managementu a společnost rozšiřuje své závazky vůči dodavatelům pamětí a infrastruktury, což vyvolává otázky ohledně budoucích marží a kapitálové disciplíny.",
+      "thesis_impact": "Krátkodobý sentiment je silně negativní, avšak masivní závazky v dodavatelském řetězci potvrzují dominantní pozici v infrastruktuře pro AI.",
       "sources": [
         {
-          "name": "NVIDIA Investor Relations",
-          "url": "https://investor.nvidia.com/"
+          "name": "Yahoo Finance — Markets",
+          "url": "https://finance.yahoo.com/markets/stocks/article/the-post-earnings-slide-in-nvidia-stock-is-getting-uglier-by-the-day-112801786.html?.tsrc=rss"
         },
         {
-          "name": "Reuters — Semiconductors",
-          "url": "https://www.reuters.com/technology/"
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html"
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "company_name": "Micron Technology, Inc.",
+      "sector": "Technologie",
+      "signal_score": 4,
+      "sentiment": "Bullish",
+      "event_type": "Zásobování & Výhled",
+      "headline": "Nvidia navyšuje závazky na paměti, Micron zůstává klíčovým dodavatelem navzdory tržnímu tlaku",
+      "analysis": "Akcie Micronu klesly o -2,10 % na $690,44 v souladu s širším výprodejem v sektoru polovodičů. Analýzy dodavatelských řetězců však ukazují, že Nvidia dramaticky navýšila své závazky vůči paměťovému sektoru, což Micronu zajišťuje vysokou vytíženost kapacity pro nadcházející čtvrtletí.",
+      "thesis_impact": "Silná poptávka po pamětech HBM pro AI akcelerátory tvoří pevnou podlahu pro fundamentální tezi společnosti.",
+      "sources": [
+        {
+          "name": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/11/19/nvidia-just-raised-its-supply-commitments-to-usd390-billion-mostly-for-memory-micron-is-the-memory-stock-i-d-buy/?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "company_name": "Constellation Energy Corporation",
+      "sector": "Utility",
+      "signal_score": 3,
+      "sentiment": "Bullish",
+      "event_type": "Strategické partnerství",
+      "headline": "Silná pozice v oblasti bezuhlíkové energie pro datová centra",
+      "analysis": "Akcie CEG odepsaly -4,08 % na $252,03 v důsledku celkového poklesu trhu a růstu výnosů dluhopisů. Firma však nadále těží z dlouhodobých kontraktů na dodávky elektřiny pro technologické giganty, které CEO srovnává s ekonomickým přínosem nových jaderných elektráren.",
+      "thesis_impact": "Strukturální poptávka po stabilním zdroji energie pro AI datová centra chrání dlouhodobou investiční tezi.",
+      "sources": [
+        {
+          "name": "TIKR / Yahoo Finance",
+          "url": "https://www.tikr.com/blog/constellation-ceo-google-and-amazon-deals-equal-a-new-large-scale-nuclear-plant-at-7-3-billion?ref=yahoofinance&tlnk=yf-261118-455pgf6h&.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "sector": "Komunikační služby",
+      "signal_score": 3,
+      "sentiment": "Neutral",
+      "event_type": "Investice & Regulace",
+      "headline": "Účast na financování AI startupů a zvýšená regulatorní pozornost",
+      "analysis": "Akcie GOOGL klesly o -3,46 % na $272,66 v rámci širokého výprodeje megakapů. Alphabet spolu s dalšími technologickými lídry nadále investuje do ekosystému umělé inteligence (např. Anthropic), avšak čelí i zostřené kontrole v oblasti moderace obsahu a regulace.",
+      "thesis_impact": "Růstové iniciativy v AI jsou vyvažovány rostoucími regulatorními náklady a tlakem na marže.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-google-amazon-back-anthropic-115953506.html?.tsrc=rss"
         }
       ]
     },
     {
       "ticker": "MSFT",
       "company_name": "Microsoft Corporation",
-      "sector": "Cloud & Software",
-      "signal_score": 4,
-      "sentiment": "Bullish",
-      "event_type": "Infrastruktura & CAPEX",
-      "headline": "Azure získává prioritní alokaci akcelerátorů a rozšiřuje smlouvy na jadernou energii v USA",
-      "analysis": "Podle zdrojů z dodavatelského řetězce si Microsoft zajistil přednostní dodávky nových GPU klastrů pro dvě nová datová centra ve Virginii a Texasu. Současně uzavřel 15letou smlouvu na odběr bezemisní elektřiny, čímž odstraňuje hlavní úzké hrdlo, které v minulém kvartálu brzdilo rychlejší růst Azure AI.",
-      "thesis_impact": "Snižuje exekuční riziko v divizi Intelligent Cloud a zvyšuje pravděpodobnost zrychlení růstu Azure nad 35 % y/y v příštích dvou kvartálech.",
-      "sources": [
-        {
-          "name": "Wall Street Journal — Tech",
-          "url": "https://www.wsj.com/tech"
-        }
-      ]
-    },
-    {
-      "ticker": "AVGO",
-      "company_name": "Broadcom Inc.",
-      "sector": "Polovodiče",
-      "signal_score": 3,
-      "sentiment": "Bullish",
-      "event_type": "Sektorový přenos",
-      "headline": "Rostoucí hustota AI racků zvyšuje poptávku po síťových přepínačích Tomahawk a zakázkových ASIC",
-      "analysis": "Výsledky Nvidie a komentáře k rozšiřování velkých trénovacích klastrů přímo podporují síťovou divizi Broadcomu. Analytici upozorňují na rostoucí poměr síťových komponent na jeden GPU uzel, což vytváří stabilní druhou nohu růstu vedle vlastních XPU čipů pro velké technologické klienty.",
-      "thesis_impact": "Pozitivní sekundární potvrzení bez nutnosti měnit odhady; klíčový test přijde s vlastními výsledky Broadcomu začátkem prosince.",
-      "sources": [
-        {
-          "name": "Barron's — Tech Trader",
-          "url": "https://www.barrons.com/"
-        }
-      ]
-    },
-    {
-      "ticker": "JPM",
-      "company_name": "JPMorgan Chase & Co.",
-      "sector": "Finance",
+      "sector": "Technologie",
       "signal_score": 3,
       "sentiment": "Neutral",
-      "event_type": "Makro & Regulace",
-      "headline": "Strmější výnosová křivka podporuje NII, ale investiční bankovnictví naráží na vysokou srovnávací základnu",
-      "analysis": "Posun výnosu US 10Y k 4,48 % zlepšuje výhled čistých úrokových výnosů (NII) pro rok 2027. Na druhou stranu vedení banky na včerejší konferenci mírnilo přehnaný optimismus ohledně poplatků z M&A poradenství v Q4, kde se část transakcí posouvá až do nového roku.",
-      "thesis_impact": "Valuace na 2,3x TBV již většinu dobrých zpráv započítává; pozice zůstává stabilním defenzivním jádrem bez nového katalyzátoru.",
+      "event_type": "Provozní aktualizace",
+      "headline": "Kybernetická bezpečnost a nové podnikové AI kontrakty v centru pozornosti",
+      "analysis": "Microsoft oslabil o -1,97 % na $498,30. Společnost rozšiřuje své podnikové AI partnery (např. nedávné dohody v potravinářském sektoru), ale zároveň musí řešit provozní a kybernetické výzvy, které přitahují pozornost regulátorů i podnikového segmentu.",
+      "thesis_impact": "Stabilní peněžní toky z cloudu a enterprise softwaru tlumí dopady širšího tržního poklesu.",
       "sources": [
         {
-          "name": "Financial Times — Banks",
-          "url": "https://www.ft.com/banks"
+          "name": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/20/does-the-nestle-ai-deal-matter-for-microsoft-shareholders/?.tsrc=rss"
         }
       ]
     },
     {
-      "ticker": "TSM",
-      "company_name": "Taiwan Semiconductor Mfg.",
-      "sector": "Polovodiče",
+      "ticker": "VST",
+      "company_name": "Vistra Corp.",
+      "sector": "Utility",
       "signal_score": 2,
       "sentiment": "Neutral",
-      "event_type": "Rutinní provozní zpráva",
-      "headline": "Továrna v Arizoně dokončila standardní bezpečnostní audit před plánovaným náběhem druhé fáze",
-      "analysis": "Lokální média v Arizoně informovala o úspěšném dokončení pravidelné inspekce vodohospodářského systému ve fabu TSMC. Zpráva je plně v souladu s dříve oznámeným harmonogramem a nemění časování náběhu 2nm výroby ani odhady kapitálových výdajů.",
-      "thesis_impact": "Žádný dopad na investiční tezi — jde o rutinní provozní milník bez překvapení.",
+      "event_type": "Tržní kontext",
+      "headline": "Korekce ocenění po předchozích trzích s energiemi",
+      "analysis": "Akcie VST klesly o -1,14 % na $124,15. Ačkoliv fundamentální výhled zůstává konzervativně solidní díky napojenost na texaský energetický trh a datová centra, akcie procházejí širší sektorovou konsolidací.",
+      "thesis_impact": "Minimální bezprostřední dopad na tezi, trh vstřebává dřívější výkyvy v poptávce po energetické infrastruktuře.",
       "sources": [
         {
-          "name": "Nikkei Asia",
-          "url": "https://asia.nikkei.com/"
+          "name": "TIKR / Yahoo Finance",
+          "url": "https://www.tikr.com/blog/vistra-stock-drop-texas-data-center-moratorium-buy-or-sell?ref=yahoofinance&tlnk=yf-261119-3rqgw84c&.tsrc=rss"
         }
       ]
     },
     {
-      "ticker": "AAPL",
-      "company_name": "Apple Inc.",
-      "sector": "Spotřební technologie",
-      "signal_score": 1,
+      "ticker": "NEE",
+      "company_name": "NextEra Energy, Inc.",
+      "sector": "Utility",
+      "signal_score": 2,
       "sentiment": "Neutral",
-      "event_type": "Tržní šum / Spekulace",
-      "headline": "Spekulace z asijských fór o barevných variantách příští generace iPhonu",
-      "analysis": "Technologické blogy citují neověřený příspěvek z dodavatelského řetězce o testování dvou nových odstínů titanového rámu pro podzim 2027. Zpráva neobsahuje žádné údaje o objemech objednávek, průměrné prodejní ceně ani vývoji služeb.",
-      "thesis_impact": "Čistý šum bez jakékoli informační hodnoty pro fundamentální ocenění.",
+      "event_type": "Regulace & Fúze",
+      "headline": "Pokrok v antimonopolním řízení ohledně plánovaných transakcí",
+      "analysis": "Akcie NEE oslabily o -1,17 % na $83,79. Ministerstvo spravedlnosti USA (DOJ) mezitím uzavřelo antimonopolní vyšetřování související s rozsáhlými transakcemi v sektoru, což odstraňuje část regulatorní neistoty.",
+      "thesis_impact": "Pokles spíše kopíruje makro vývoj dluhopisového trhu než specifické firemní zprávy.",
       "sources": [
         {
-          "name": "MacRumors",
-          "url": "https://www.macrumors.com/"
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/doj-closes-antitrust-probe-nextera-032504407.html?.tsrc=rss"
         }
       ]
     }
@@ -198,57 +216,20 @@
   "today_calendar": {
     "macro_events": [
       {
-        "time_cet": "15:45",
-        "event": "US S&P Global Manufacturing PMI (Předběžný, lis.)",
+        "time_cet": "14:30",
+        "event": "Počáteční žádosti o podporu v nezaměstnanosti (Initial Jobless Claims)",
         "importance": "High",
-        "consensus": "49,8",
-        "previous": "49,1"
-      },
-      {
-        "time_cet": "15:45",
-        "event": "US S&P Global Services PMI (Předběžný, lis.)",
-        "importance": "High",
-        "consensus": "54,6",
-        "previous": "55,0"
+        "consensus": "225 tis.",
+        "previous": "220 tis."
       },
       {
         "time_cet": "16:00",
-        "event": "Index spotřebitelské důvěry Univ. of Michigan (Finální)",
+        "event": "Prodeje dříve postavených domů (Existing Home Sales)",
         "importance": "Medium",
-        "consensus": "72,4",
-        "previous": "72,1"
-      },
-      {
-        "time_cet": "16:00",
-        "event": "Inflační očekávání UoM (5letý horizont)",
-        "importance": "Medium",
-        "consensus": "3,0 %",
-        "previous": "3,1 %"
-      },
-      {
-        "time_cet": "19:00",
-        "event": "Baker Hughes — počet aktivních ropných vrtů v USA",
-        "importance": "Low",
-        "consensus": "481",
-        "previous": "479"
+        "consensus": "3,92 mil.",
+        "previous": "3,88 mil."
       }
     ],
-    "watchlist_earnings": [
-      {
-        "ticker": "DE",
-        "timing": "Před otevřením (BMO)",
-        "eps_estimate": "$4,12"
-      },
-      {
-        "ticker": "ROST",
-        "timing": "Po uzavření (AMC)",
-        "eps_estimate": "$1,48"
-      },
-      {
-        "ticker": "INTU",
-        "timing": "Po uzavření (AMC)",
-        "eps_estimate": "$2,64"
-      }
-    ]
+    "watchlist_earnings": []
   }
 }
