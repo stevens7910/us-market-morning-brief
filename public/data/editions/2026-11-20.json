@@ -1,17 +1,17 @@
 {
   "meta": {
     "edition_date": "2026-11-20",
-    "generated_at_cet": "13:16 CET",
-    "market_regime": "Cautious / Rates-Driven",
-    "headline": "Nervozita na Wall Street roste: Výprodej v polovodičích a obavy o udržitelnost AI cyklu táhnou indexy dolů",
+    "generated_at_cet": "13:34 CET",
+    "market_regime": "Risk-Off",
+    "headline": "Anthropic IPO a panika v technologickém sektoru: 'Miserable 7' přišly o biliony",
     "reading_time_minutes": 4
   },
   "notification_payload": {
-    "short_title": "Trhy pod tlakem: Výprodej v technologiích, výnosy 10Y US bondů na 5,05 %",
+    "short_title": "Výprodej 'Miserable 7' a IPO Anthropic: Trhy testují dno",
     "top_bullets": [
-      "S&P 500 se propadl o -2,02 % na 7 175,83 bodu, přičemž Nasdaq 100 oslabil o -2,21 % vlivem přetrvávajících obav z valuací v sektoru umělé inteligence.",
-      "Výnos 10letých amerických dluhopisů se drží na zvýšené úrovni 5,05 %, což nadále komprimuje valuace růstových a technologických aktiv.",
-      "Index strachu CBOE VIX vyskočil o +5,03 % na 29,87 bodu, což signalizuje rostoucí nervozitu na straně institucionálních investorů."
+      "Americké akcie včera prudce osladily, S&P 500 klesl o -2,02 % na 7 175,83 bodu a index VIX vyskočil o +6,89 % na 30,40 bodu.",
+      "Vokativní IPO společnosti Anthropic přineslo masivní volatilitu a prohloubilo obavy z přehřátí sektoru umělé inteligence.",
+      "Výnosy 10letých dluhopisů USA mírně klesly na 5,05 % (-1,4 bp), zatímco technologický sektor čelí odlivu kapitálu."
     ],
     "has_critical_watchlist_event": true
   },
@@ -49,42 +49,44 @@
     {
       "symbol": "VIX",
       "label": "CBOE VIX",
-      "value": "29,87",
-      "change_pct": 5.03
+      "value": "30,40",
+      "change_pct": 6.89
     },
     {
       "symbol": "DXY",
       "label": "US Dollar Index",
-      "value": "103,89",
-      "change_pct": -0.01
+      "value": "103,84",
+      "change_pct": -0.05
     }
   ],
   "lead_story": {
-    "title": "Nervozita na Wall Street roste: Výprodej v polovodičích a obavy o udržitelnost AI cyklu táhnou indexy dolů",
+    "title": "Anthropic IPO a panika v technologickém sektoru: 'Miserable 7' přišly o biliony",
     "summary_paragraphs": [
-      "Americké finanční trhy čelí silnému prodejnímu tlaku, který včera odpoledne vyústil v plošný pokles hlavních indexů. S&P 500 oslabil o -2,02 % na 7 175,83 bodu a technologický Nasdaq 100 ztratil -2,21 %, když se uzavřel na 26 517,05 bodu. Investoři přehodnocují rizikovou prémii v sektoru umělé inteligence, k čemuž přispívají jak rostoucí právní a exekuční rizika kolem klíčových hráčů, tak napjaté makroekonomické podmínky.",
-      "Výnosy desetiletých amerických státních dluhopisů (US10Y) setrvávají na úrovni 5,05 %, což představuje zásadní překážku pro udržení vysokých multiplikátorů technologických společností. Vyšší bezriziková sazba nutí fondy k přecenění budoucích peněžních toků a přesunu kapitálu směrem k defenzivnějším sektorům a hotovosti, což reflektuje i skok indexu VIX o +5,03 % na 29,87 bodu.",
-      "Současná tržní dynamika ukazuje na konec bezmyšlenkovitého financování technologického sektoru („open checkbook is over“). Zatímco poptávka po pokročitém hardwaru a paměťových čipech zůstává robustní, trh začíná přísně rozlišovat mezi společnostmi schopnými generovat okamžitou reálnou návratnost investic a těmi, které spoléhají pouze na budoucí sliby."
+      "Americké akciové trhy včera zažily dramatickou seanci, kdy se hlavní index S&P 500 propadl o -2,02 % na 7 175,83 bodu a technologický Nasdaq 100 oslabil o -2,21 % na 26 517,05 bodu. Investoři reagují na kombinaci makroekonomických nejistot a extrémní koncentrace kapitálu v technologických gigantech, které během jediné noci ztratily na tržní hodnotě bezmála 4 biliony dolarů.",
+      "Hlavním katalyzátorem nervozity bylo vysoce sledované IPO společnosti Anthropic. Přestože debut vzdoroval nepříznivým tržním podmínkám a akcie zpočátku silně rostly, následný obrat a vybírání zisků zakladatelů v objemu téměř 2 miliard dolarů spustily vlnu výprodejů napříč celým AI sektorem včetně klíčových hráčů jako NVDA a GOOGL.",
+      "Index strachu CBOE VIX vyskočil o +6,89 % na úroveň 30,40 bodu, což signalizuje nástup rizikové averze. Výnosy 10letých amerických státních dluhopisů (US10Y) se mezitím stabilizovaly na 5,05 %, avšak trh nadále zůstává pod tlakem rostoucích obav z udržitelnosti masivních kapitálových výdajů do datových center a polovodičů."
     ],
     "second_order_effects": [
-      "Komprese valuací v technologickém sektoru se přenáší do primárních emisí, kde nové IPO navzdory silnému debutu narážejí na opatrnou likviditu.",
-      "Vyšší úrokové sazby na dluhopisovém trhu prodražují financování energetických projektů pro datová centra, což dopadá na utility zaměřené na AI."
+      "Odliv kapitálu z mega-kapitálových technologických titulů do defenzivnějších sektorů a hotovosti.",
+      "Zvýšená volatilita v polovodičovém sektoru kvůli obavám z nasycení poptávky po paměťových čipech.",
+      "Tlak na energetické utility (CEG, VST) vázané na dlouhodobé kontrakty pro napájení AI infrastruktury."
     ],
     "affected_tickers": [
       "NVDA",
-      "MSFT",
       "GOOGL",
+      "MSFT",
       "MU",
-      "CEG"
+      "CEG",
+      "VST"
     ],
     "sources": [
       {
         "name": "CNBC Top News",
-        "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+        "url": "https://www.cnbc.com/2026/11/20/anthropic-defies-odds-holding-ipo-despite-massively-disruptive-market.html"
       },
       {
         "name": "MarketWatch Top Stories",
-        "url": "https://www.marketwatch.com/story/anthropics-stock-surges-in-its-debut-and-the-rest-of-the-market-dives-anyway-19671218?mod=mw_rss_topstories"
+        "url": "https://www.marketwatch.com/story/anthropics-stock-surges-in-its-debut-and-the-rest-of-the-market-dives-19671218?mod=mw_rss_topstories"
       }
     ]
   },
@@ -95,18 +97,35 @@
       "sector": "Technologie",
       "signal_score": 5,
       "sentiment": "Bearish",
-      "event_type": "Výsledky & Výhled",
-      "headline": "Prohlubující se pokles akcií po výsledcích a rostoucí regulatorní a právní tlak",
-      "analysis": "Akcie NVIDIA oslabily o -3,30 % na $145,98 v návaznosti na pokračující vlnu výprodejů po nedávném zveřejnění výsledků. Současně narůstají právní a exekuční rizika managementu a společnost rozšiřuje své závazky vůči dodavatelům pamětí a infrastruktury, což vyvolává otázky ohledně budoucích marží a kapitálové disciplíny.",
-      "thesis_impact": "Krátkodobý sentiment je silně negativní, avšak masivní závazky v dodavatelském řetězci potvrzují dominantní pozici v infrastruktuře pro AI.",
+      "event_type": "Tržní šum & AI cyklus",
+      "headline": "Nvidia čelí turbulence v AI sektoru a rekordním závazkům",
+      "analysis": "Nvidia uzavřela na 145,98 USD při poklesu o -3,30 %. Společnost čelí diskusím o udržitelnosti svých dodavatelských závazků v hodnotě 390 miliard USD, z nichž velká část směřuje do pamětí. Současné napětí v sektoru vyvolané IPO Anthropic testuje pozici Nvidie jako centrální banky AI.",
+      "thesis_impact": "Krátkodobý sentiment je vysoce negativní, avšak fundamentální poptávka po akcelerátorech zůstává vysoká. Sledujeme úroveň podpory na akcii.",
       "sources": [
         {
-          "name": "Yahoo Finance — Markets",
-          "url": "https://finance.yahoo.com/markets/stocks/article/the-post-earnings-slide-in-nvidia-stock-is-getting-uglier-by-the-day-112801786.html?.tsrc=rss"
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/m/6e6f9c49-9658-3615-8008-22c4188b1bd6/%27miserable-7%27-stocks-shed.html?.tsrc=rss"
         },
         {
-          "name": "CNBC",
-          "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html"
+          "name": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/11/19/nvidia-just-raised-its-supply-commitments-to-usd390-billion-mostly-for-memory-micron-is-the-memory-stock-i-d-buy/?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "sector": "Služby komunikace",
+      "signal_score": 4,
+      "sentiment": "Bearish",
+      "event_type": "Insiders & Tržní tlak",
+      "headline": "Stanley Druckenmiller prodává Google kvůli zhoršenému výhledu",
+      "analysis": "Akcie GOOGL oslabily o -3,46 % na 272,66 USD. Známý investor Stanley Druckenmiller zcela opustil pozici v Googlu ve snaze ochránit kapitál před rostoucí nejistotou v sektoru generativní AI a konkurenčním tlakem ze strany Anthropic a OpenAI.",
+      "thesis_impact": "Institucionální odliv kapitálu zvyšuje prodejní tlak na akcii v prostředí širokého tržního výprodeje.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stanley-druckenmiller-dumps-google-stock-121500032.html?.tsrc=rss"
         }
       ]
     },
@@ -116,14 +135,14 @@
       "sector": "Technologie",
       "signal_score": 4,
       "sentiment": "Bullish",
-      "event_type": "Zásobování & Výhled",
-      "headline": "Nvidia navyšuje závazky na paměti, Micron zůstává klíčovým dodavatelem navzdory tržnímu tlaku",
-      "analysis": "Akcie Micronu klesly o -2,10 % na $690,44 v souladu s širším výprodejem v sektoru polovodičů. Analýzy dodavatelských řetězců však ukazují, že Nvidia dramaticky navýšila své závazky vůči paměťovému sektoru, což Micronu zajišťuje vysokou vytíženost kapacity pro nadcházející čtvrtletí.",
-      "thesis_impact": "Silná poptávka po pamětech HBM pro AI akcelerátory tvoří pevnou podlahu pro fundamentální tezi společnosti.",
+      "event_type": "Výsledky & Dodavatelský řetězec",
+      "headline": "Nvidia navyšuje paměťové závazky, Micron v pozici klíčového dodavatele",
+      "analysis": "Micron uzavřel na 690,44 USD (-2,10 %). Analytici upozorňují, že vzhledem k obrovským dodavatelským závazkům Nvidie je Micron extrémně dobře pozicován před nadcházejícími prosincovými výsledky, přestože ETF fondy v posledních dnech mírně redukovaly pozice.",
+      "thesis_impact": "Dlouhodobá investiční teze těží z nedostatku pokročilých pamětí (HBM) pro AI servery.",
       "sources": [
         {
           "name": "The Motley Fool",
-          "url": "https://www.fool.com/investing/2026/11/19/nvidia-just-raised-its-supply-commitments-to-usd390-billion-mostly-for-memory-micron-is-the-memory-stock-i-d-buy/?.tsrc=rss"
+          "url": "https://www.fool.com/investing/2026/11/20/prediction-micron-stock-is-going-to-soar/?.tsrc=rss"
         }
       ]
     },
@@ -133,31 +152,31 @@
       "sector": "Utility",
       "signal_score": 3,
       "sentiment": "Bullish",
-      "event_type": "Strategické partnerství",
-      "headline": "Silná pozice v oblasti bezuhlíkové energie pro datová centra",
-      "analysis": "Akcie CEG odepsaly -4,08 % na $252,03 v důsledku celkového poklesu trhu a růstu výnosů dluhopisů. Firma však nadále těží z dlouhodobých kontraktů na dodávky elektřiny pro technologické giganty, které CEO srovnává s ekonomickým přínosem nových jaderných elektráren.",
-      "thesis_impact": "Strukturální poptávka po stabilním zdroji energie pro AI datová centra chrání dlouhodobou investiční tezi.",
+      "event_type": "Sektorový vývoj",
+      "headline": "Konstelace jaderné energie zůstává atraktivní přes korekci trhu",
+      "analysis": "CEG klesla o -4,08 % na 252,03 USD v rámci plošného výprodeje rizikových aktiv. Dlouhodobé fundamenty poháněné poptávkou technologických gigantů po stabilních dodávkách bezuhlíkové energie však zůstávají nedotčené.",
+      "thesis_impact": "Valuace se po nedávném poklesu dostává na atraktivnější úrovně vzhledem k silnému cash flow.",
       "sources": [
         {
-          "name": "TIKR / Yahoo Finance",
-          "url": "https://www.tikr.com/blog/constellation-ceo-google-and-amazon-deals-equal-a-new-large-scale-nuclear-plant-at-7-3-billion?ref=yahoofinance&tlnk=yf-261118-455pgf6h&.tsrc=rss"
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-ceg-following-earnings-201045909.html?.tsrc=rss"
         }
       ]
     },
     {
-      "ticker": "GOOGL",
-      "company_name": "Alphabet Inc.",
-      "sector": "Komunikační služby",
+      "ticker": "VST",
+      "company_name": "Vistra Corp.",
+      "sector": "Utility",
       "signal_score": 3,
       "sentiment": "Neutral",
-      "event_type": "Investice & Regulace",
-      "headline": "Účast na financování AI startupů a zvýšená regulatorní pozornost",
-      "analysis": "Akcie GOOGL klesly o -3,46 % na $272,66 v rámci širokého výprodeje megakapů. Alphabet spolu s dalšími technologickými lídry nadále investuje do ekosystému umělé inteligence (např. Anthropic), avšak čelí i zostřené kontrole v oblasti moderace obsahu a regulace.",
-      "thesis_impact": "Růstové iniciativy v AI jsou vyvažovány rostoucími regulatorními náklady a tlakem na marže.",
+      "event_type": "Sektorový vývoj",
+      "headline": "Vistra reflektuje konzervativnější pohled na budování datových center",
+      "analysis": "Akcie VST oslavily o -1,14 % na 124,15 USD. Společnost těží z konzervativnějšího přístupu k rozvoji energetické infrastruktury pro AI v Texasu, což zmírňuje obavy z přehnaných investičních nákladů.",
+      "thesis_impact": "Stabilní defenzivní prvek ve watchlistu s dobrým zajištěním proti výkyvům technologického sektoru.",
       "sources": [
         {
-          "name": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-google-amazon-back-anthropic-115953506.html?.tsrc=rss"
+          "name": "TIKR",
+          "url": "https://www.tikr.com/blog/vistra-stock-drop-texas-data-center-moratorium-buy-or-sell?ref=yahoofinance&tlnk=yf-261119-3rqgw84c&.tsrc=rss"
         }
       ]
     },
@@ -167,31 +186,14 @@
       "sector": "Technologie",
       "signal_score": 3,
       "sentiment": "Neutral",
-      "event_type": "Provozní aktualizace",
-      "headline": "Kybernetická bezpečnost a nové podnikové AI kontrakty v centru pozornosti",
-      "analysis": "Microsoft oslabil o -1,97 % na $498,30. Společnost rozšiřuje své podnikové AI partnery (např. nedávné dohody v potravinářském sektoru), ale zároveň musí řešit provozní a kybernetické výzvy, které přitahují pozornost regulátorů i podnikového segmentu.",
-      "thesis_impact": "Stabilní peněžní toky z cloudu a enterprise softwaru tlumí dopady širšího tržního poklesu.",
+      "event_type": "Partnerství & AI",
+      "headline": "Microsoft rozšiřuje agentická partnerství s Danaher",
+      "analysis": "Microsoft oslaben o -1,97 % na 498,30 USD. Firma oznámila strategickou spolupráci s Danaher v oblasti inteligentních vědeckých laboratoří, což dále rozšiřuje komerční využití její cloudové a AI infrastruktury.",
+      "thesis_impact": "Diverzifikované podnikání v oblasti podnikového software poskytuje silný polštář proti širším tržním výprodejům.",
       "sources": [
         {
-          "name": "24/7 Wall St.",
-          "url": "https://247wallst.com/investing/2026/11/20/does-the-nestle-ai-deal-matter-for-microsoft-shareholders/?.tsrc=rss"
-        }
-      ]
-    },
-    {
-      "ticker": "VST",
-      "company_name": "Vistra Corp.",
-      "sector": "Utility",
-      "signal_score": 2,
-      "sentiment": "Neutral",
-      "event_type": "Tržní kontext",
-      "headline": "Korekce ocenění po předchozích trzích s energiemi",
-      "analysis": "Akcie VST klesly o -1,14 % na $124,15. Ačkoliv fundamentální výhled zůstává konzervativně solidní díky napojenost na texaský energetický trh a datová centra, akcie procházejí širší sektorovou konsolidací.",
-      "thesis_impact": "Minimální bezprostřední dopad na tezi, trh vstřebává dřívější výkyvy v poptávce po energetické infrastruktuře.",
-      "sources": [
-        {
-          "name": "TIKR / Yahoo Finance",
-          "url": "https://www.tikr.com/blog/vistra-stock-drop-texas-data-center-moratorium-buy-or-sell?ref=yahoofinance&tlnk=yf-261119-3rqgw84c&.tsrc=rss"
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/danaher-collaborates-microsoft-scientific-instruments-123000585.html?.tsrc=rss"
         }
       ]
     },
@@ -201,10 +203,10 @@
       "sector": "Utility",
       "signal_score": 2,
       "sentiment": "Neutral",
-      "event_type": "Regulace & Fúze",
-      "headline": "Pokrok v antimonopolním řízení ohledně plánovaných transakcí",
-      "analysis": "Akcie NEE oslabily o -1,17 % na $83,79. Ministerstvo spravedlnosti USA (DOJ) mezitím uzavřelo antimonopolní vyšetřování související s rozsáhlými transakcemi v sektoru, což odstraňuje část regulatorní neistoty.",
-      "thesis_impact": "Pokles spíše kopíruje makro vývoj dluhopisového trhu než specifické firemní zprávy.",
+      "event_type": "Regulace",
+      "headline": "DOJ uzavírá antimonopolní vyšetřování transakce NextEra",
+      "analysis": "Akcie NEE klesly o -1,17 % na 83,79 USD. Americké ministerstvo spravedlnosti (DOJ) oficiálně uzavřelo antimonopolní vyšetřování týkající se aktivit společnosti, což odstraňuje významnou regulatorní nejistotu.",
+      "thesis_impact": "Pozitivní zpráva pro dlouhodobou stabilitu, avšak aktuální cenová akce je silně ovlivněna makro prostředím.",
       "sources": [
         {
           "name": "Yahoo Finance",
@@ -217,16 +219,16 @@
     "macro_events": [
       {
         "time_cet": "14:30",
-        "event": "Počáteční žádosti o podporu v nezaměstnanosti (Initial Jobless Claims)",
+        "event": "Týdenní žádosti o podporu v nezaměstnanosti (Initial Jobless Claims)",
         "importance": "High",
-        "consensus": "225 tis.",
-        "previous": "220 tis."
+        "consensus": "220 tis.",
+        "previous": "217 tis."
       },
       {
         "time_cet": "16:00",
-        "event": "Prodeje dříve postavených domů (Existing Home Sales)",
+        "event": "Prodeje již dříve kupovaných domů (Existing Home Sales)",
         "importance": "Medium",
-        "consensus": "3,92 mil.",
+        "consensus": "3,95 mil.",
         "previous": "3,88 mil."
       }
     ],

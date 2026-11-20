@@ -1,14 +1,15 @@
 [
   {
     "edition_date": "2026-11-20",
-    "headline": "Nervozita na Wall Street roste: Výprodej v polovodičích a obavy o udržitelnost AI cyklu táhnou indexy dolů",
-    "market_regime": "Cautious / Rates-Driven",
+    "headline": "Anthropic IPO a panika v technologickém sektoru: 'Miserable 7' přišly o biliony",
+    "market_regime": "Risk-Off",
     "affected_tickers": [
       "NVDA",
-      "MSFT",
       "GOOGL",
+      "MSFT",
       "MU",
-      "CEG"
+      "CEG",
+      "VST"
     ],
     "has_critical_watchlist_event": true
   },
