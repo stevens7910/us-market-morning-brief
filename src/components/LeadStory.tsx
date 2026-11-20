@@ -1,5 +1,6 @@
-import { ArrowRight, ExternalLink, Layers } from 'lucide-react';
+import { ArrowRight, Layers } from 'lucide-react';
 import type { LeadStory as LeadStoryType } from '../types/edition';
+import { SourceLinkBadge } from './SourceLinkBadge';
 
 interface LeadStoryProps {
   story: LeadStoryType;
@@ -99,18 +100,10 @@ export function LeadStory({
             <span className="block text-[11px] font-semibold uppercase tracking-wider text-ft-muted mb-2">
               Primární zdroje
             </span>
-            <ul className="flex flex-wrap sm:justify-end gap-x-4 gap-y-1.5">
+            <ul className="flex flex-wrap items-center sm:justify-end gap-x-3 gap-y-1.5">
               {story.sources.map((src) => (
                 <li key={src.url}>
-                  <a
-                    href={src.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs font-medium text-ft-claret hover:text-ft-claret-dark underline decoration-ft-claret/40 underline-offset-2"
-                  >
-                    <span>{src.name}</span>
-                    <ExternalLink className="h-3 w-3 flex-none" />
-                  </a>
+                  <SourceLinkBadge source={src} />
                 </li>
               ))}
             </ul>

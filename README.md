@@ -43,7 +43,9 @@ python pipeline/generate_brief.py
 ```
 
 ## Nastavení automatického ranního nasazení (GitHub Actions + GitHub Pages)
-1. V repozitáři na GitHubu přejdi do **Settings → Secrets and variables → Actions** a přidej secret **`GEMINI_API_KEY`**.
-   - *(Volitelně)* přidej proměnnou `GEMINI_MODEL` (výchozí je `gemini-4-hydrogen`).
+1. V repozitáři na GitHubu přejdi do **Settings → Secrets and variables → Actions** a přidej secret:
+   - **`GEMINI_API_KEY`** *(povinný)* — API klíč z Google AI Studio.
+   - **`SEC_USER_AGENT`** *(volitelný)* — vlastní hlavička pro SEC EDGAR API ve formátu `NazevAplikace email@domena.cz` (pokud není nastavena, použije se výchozí `USMarketMorningBrief brief@example.com`).
+   - *(Volitelně)* přidej proměnnou `GEMINI_MODEL` (výchozí je `gemini-3.5-flash-lite`).
 2. V **Settings → Pages** nastav **Source** na **GitHub Actions**.
 3. Workflow [morning-brief.yml](.github/workflows/morning-brief.yml) se bude spouštět automaticky každý pracovní den ráno (nebo kdykoliv ručně přes záložku **Actions → Run workflow**), vygeneruje nové JSON vydání, uloží ho do repozitáře a nasadí aktualizovanou PWA na GitHub Pages.

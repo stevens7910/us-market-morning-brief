@@ -21,10 +21,13 @@ import json
 import logging
 import os
 import sys
-from datetime import datetime
+import time
+from datetime import datetime, timedelta
 from pathlib import Path
+from typing import Any
 from zoneinfo import ZoneInfo
 
+import requests
 from google import genai
 
 from fetch_market_data import MarketContext, fetch_all_context
@@ -49,6 +52,10 @@ INDEX_PATH = DATA_DIR / "index.json"
 
 DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
 FALLBACK_MODELS = ["gemini-3.1-flash-lite", "gemini-4-hydrogen"]
+SEC_USER_AGENT = (
+    os.environ.get("SEC_USER_AGENT", "").strip()
+    or "USMarketMorningBrief brief@example.com"
+)
 PRAGUE_TZ = ZoneInfo("Europe/Prague")
 MAX_ARCHIVE_EDITIONS = 90
 
@@ -74,10 +81,116 @@ Zásady redakční kvality:
    jedna položka v `watchlist_updates` hodnotu `signal_score` >= 4.
 5. V `today_calendar` uveď dnešní důležité americké makroekonomické události (časy převedené do CET/CEST \
    ve formátu HH:MM) a případné dnešní výsledky firem z watchlistu či klíčových tržních lídrů.
-6. Vždy používej reálné, existující URL zdrojů z poskytnutých RSS titulků nebo výsledků vyhledávání. \
-   Nikdy si URL nevymýšlej.
-7. Výstup musí 100% dodržet zadané JSON schéma.
+6. Vždy používej reálné, existující URL zdrojů z poskytnutých RSS titulků, SEC EDGAR hlášení nebo \
+   výsledků vyhledávání. Nikdy si URL nevymýšlej.
+7. Pravidla pro oficiální hlášení SEC EDGAR (`sec_filings`):
+   - Oficiální hlášení v `sec_filings` ber jako **primární zdroj s nejvyšší prioritou**.
+   - **Form 8-K** (zejména položky `1.01` materiální smlouva, `2.02` výsledky, `5.02` změna vedení) \
+     spáruj s tržním/zpravodajským kontextem a přiřaď mu téměř vždy `signal_score` 4 nebo 5.
+   - **Form 4** (insider obchody) zmiňuj jen tehdy, pokud jde v kontextu zpráv o neobvyklý nebo \
+     významný nákup/prodej, jinak ho neřaď mezi vysoký signál.
+   - Do pole `sources` u příslušného `watchlist_updates` vždy vlož přímý odkaz na SEC dokument \
+     s názvem např. `"SEC EDGAR 8-K"` nebo `"SEC EDGAR Form 4"`.
+8. Výstup musí 100% dodržet zadané JSON schéma.
 """
+
+
+def get_ticker_to_cik_map() -> dict[str, str]:
+    """Stáhne veřejný SEC převodník ticker -> 10místný CIK doplněný nulami zleva."""
+    url = "https://www.sec.gov/files/company_tickers.json"
+    headers = {"User-Agent": SEC_USER_AGENT, "Accept": "application/json"}
+    try:
+        resp = requests.get(url, headers=headers, timeout=15)
+        resp.raise_for_status()
+        payload = resp.json()
+        mapping: dict[str, str] = {}
+        for entry in payload.values():
+            ticker = str(entry.get("ticker", "")).strip().upper()
+            cik_raw = entry.get("cik_str")
+            if ticker and cik_raw is not None:
+                mapping[ticker] = str(cik_raw).zfill(10)
+        return mapping
+    except Exception as exc:
+        logger.warning("Nepodařilo se stáhnout SEC company_tickers.json: %s", exc)
+        return {}
+
+
+def fetch_sec_filings(
+    watchlist: list[str],
+    cutoff_date_str: str,
+) -> dict[str, list[dict[str, Any]]]:
+    """Stáhne čerstvá SEC EDGAR hlášení (Form 8-K a Form 4) pro tickery z watchlistu."""
+    logger.info("Stahuji primární hlášení SEC EDGAR (od %s)...", cutoff_date_str)
+    ticker_to_cik = get_ticker_to_cik_map()
+    if not ticker_to_cik:
+        return {}
+
+    headers = {"User-Agent": SEC_USER_AGENT, "Accept": "application/json"}
+    results: dict[str, list[dict[str, Any]]] = {}
+
+    for idx, raw_ticker in enumerate(watchlist):
+        ticker = raw_ticker.strip().upper()
+        cik = ticker_to_cik.get(ticker)
+        if not cik:
+            logger.debug("SEC CIK nenalezen pro ticker %s.", ticker)
+            continue
+
+        if idx > 0:
+            time.sleep(0.15)  # Dodržení SEC rate limitu (max 10 req/s)
+
+        sub_url = f"https://data.sec.gov/submissions/CIK{cik}.json"
+        try:
+            resp = requests.get(sub_url, headers=headers, timeout=15)
+            resp.raise_for_status()
+            data = resp.json()
+            recent = data.get("filings", {}).get("recent", {})
+
+            forms = recent.get("form", [])
+            filing_dates = recent.get("filingDate", [])
+            accession_numbers = recent.get("accessionNumber", [])
+            primary_docs = recent.get("primaryDocument", [])
+            items_list = recent.get("items", [])
+
+            matched: list[dict[str, Any]] = []
+            limit = min(30, len(forms), len(filing_dates), len(accession_numbers), len(primary_docs))
+            cik_int = int(cik)
+
+            for i in range(limit):
+                filing_date = str(filing_dates[i])
+                if filing_date < cutoff_date_str:
+                    break
+
+                form = str(forms[i]).strip()
+                if form not in ("8-K", "4"):
+                    continue
+
+                accession_clean = str(accession_numbers[i]).replace("-", "")
+                primary_doc = str(primary_docs[i]).strip()
+                doc_url = (
+                    f"https://www.sec.gov/Archives/edgar/data/"
+                    f"{cik_int}/{accession_clean}/{primary_doc}"
+                )
+                sec_items = items_list[i] if i < len(items_list) else []
+                if isinstance(sec_items, str):
+                    sec_items = [s.strip() for s in sec_items.split(",") if s.strip()]
+
+                matched.append(
+                    {
+                        "form": form,
+                        "filing_date": filing_date,
+                        "sec_items": sec_items,
+                        "url": doc_url,
+                    }
+                )
+
+            if matched:
+                results[ticker] = matched
+                logger.info("SEC EDGAR %s: nalezeno %d hlášení (8-K / Form 4).", ticker, len(matched))
+        except Exception as exc:
+            logger.warning("Chyba při stahování SEC hlášení pro %s (CIK %s): %s", ticker, cik, exc)
+            continue
+
+    return results
 
 
 def load_watchlist(path: Path = WATCHLIST_PATH) -> list[str]:
@@ -95,6 +208,7 @@ def build_prompt(
     generated_at_cet: str,
     tickers: list[str],
     ctx: MarketContext,
+    sec_filings: dict[str, list[dict[str, Any]]],
 ) -> str:
     snapshot_lines = [
         f"- {item.label} ({item.symbol}): {item.value} "
@@ -125,12 +239,14 @@ def build_prompt(
             lines = [f"- [{h.published_utc}] {h.title} — {h.url}" for h in items]
             wl_news_blocks.append(f"### {ticker}\n" + "\n".join(lines))
 
+    sec_payload_json = json.dumps({"sec_filings": sec_filings}, ensure_ascii=False, indent=2)
+
     return f"""\
 Připrav kompletní ranní vydání **US Market Morning Brief** pro datum **{edition_date}** (generováno v {generated_at_cet}).
 
-Použij poskytnutá tvrdá tržní data a RSS přehled níže, a doplň je aktuálním vyhledáním přes nástroj Google Search \
-(zejména pro ověření dnešního US makro kalendáře, výsledkové sezóny a nejčerstvějších nočních/after-hours zpráv \
-k tickerům z watchlistu).
+Použij poskytnutá tvrdá tržní data, primární SEC EDGAR hlášení (`sec_filings`) a RSS přehled níže, a doplň je \
+aktuálním vyhledáním přes nástroj Google Search (zejména pro ověření dnešního US makro kalendáře, výsledkové \
+sezóny a nejčerstvějších nočních/after-hours zpráv k tickerům z watchlistu).
 
 ## Sledovaný watchlist (vyhodnoť všechny tickery)
 {", ".join(tickers)}
@@ -140,6 +256,11 @@ k tickerům z watchlistu).
 
 ## Kotace watchlistu
 {chr(10).join(quote_lines)}
+
+## Primární hlášení SEC EDGAR (nejvyšší priorita)
+```json
+{sec_payload_json}
+```
 
 ## Čerstvé makro & tržní RSS titulky
 {chr(10).join(macro_lines) or "- Žádné RSS titulky, vyhledej hlavní dění na US trzích."}
@@ -292,6 +413,9 @@ def main() -> int:
 
     now_prague = datetime.now(PRAGUE_TZ)
     edition_date = args.date or now_prague.strftime("%Y-%m-%d")
+    yesterday_str = (
+        datetime.strptime(edition_date, "%Y-%m-%d") - timedelta(days=1)
+    ).strftime("%Y-%m-%d")
     tz_abbr = now_prague.tzname() or "CET"
     generated_at_cet = f"{now_prague.strftime('%H:%M')} {tz_abbr}"
 
@@ -299,10 +423,16 @@ def main() -> int:
     logger.info("Načten watchlist (%d tickerů): %s", len(tickers), ", ".join(tickers))
 
     ctx = fetch_all_context(tickers)
-    prompt = build_prompt(edition_date, generated_at_cet, tickers, ctx)
+    sec_filings = fetch_sec_filings(tickers, yesterday_str)
+    prompt = build_prompt(edition_date, generated_at_cet, tickers, ctx, sec_filings)
 
     if args.dry_run:
-        logger.info("DRY-RUN dokončen. Snapshot položek: %d, makro titulků: %d.", len(ctx.market_snapshot), len(ctx.macro_headlines))
+        logger.info(
+            "DRY-RUN dokončen. Snapshot položek: %d, makro titulků: %d, SEC tickerů s hlášením: %d.",
+            len(ctx.market_snapshot),
+            len(ctx.macro_headlines),
+            len(sec_filings),
+        )
         print(prompt[:2500])
         return 0
 

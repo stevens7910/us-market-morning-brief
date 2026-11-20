@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import {
   ChevronDown,
-  ExternalLink,
   Filter,
   Radar,
   Target,
@@ -14,6 +13,7 @@ import type {
   WatchlistUpdate,
 } from '../types/edition';
 import { getSentimentLabel, getSignalLabel } from '../utils/format';
+import { SourceLinkBadge } from './SourceLinkBadge';
 
 interface WatchlistRadarProps {
   updates: WatchlistUpdate[];
@@ -309,21 +309,12 @@ export function WatchlistRadar({
 
                 {/* Zdroje */}
                 {item.sources.length > 0 && (
-                  <div className="mt-3 pt-2.5 border-t border-ft-border/60 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+                  <div className="mt-3 pt-2.5 border-t border-ft-border/60 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs">
                     <span className="text-[11px] uppercase tracking-wider text-ft-muted">
                       Zdroje:
                     </span>
                     {item.sources.map((src) => (
-                      <a
-                        key={src.url}
-                        href={src.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-ft-claret hover:text-ft-claret-dark underline decoration-ft-claret/35 underline-offset-2"
-                      >
-                        <span>{src.name}</span>
-                        <ExternalLink className="h-3 w-3" />
-                      </a>
+                      <SourceLinkBadge key={src.url} source={src} />
                     ))}
                   </div>
                 )}
