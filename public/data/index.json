@@ -1,5 +1,19 @@
 [
   {
+    "edition_date": "2026-11-21",
+    "headline": "Hysterie kolem AI přerůstá v systémový šok: Wall Street padá do korekce",
+    "market_regime": "Risk-Off",
+    "affected_tickers": [
+      "NVDA",
+      "MSFT",
+      "GOOGL",
+      "MU",
+      "CEG",
+      "VST"
+    ],
+    "has_critical_watchlist_event": true
+  },
+  {
     "edition_date": "2026-11-20",
     "headline": "Anthropic IPO a panika v technologickém sektoru: 'Miserable 7' přišly o biliony",
     "market_regime": "Risk-Off",

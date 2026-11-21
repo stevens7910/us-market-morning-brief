@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "edition_date": "2026-11-21",
+    "generated_at_cet": "09:00 CET",
+    "market_regime": "Risk-Off",
+    "headline": "Hysterie kolem AI přerůstá v systémový šok: Wall Street padá do korekce",
+    "reading_time_minutes": 4
+  },
+  "notification_payload": {
+    "short_title": "AI výprodej smazal zisky Nasdaq; S&P 500 a Dow v korekci",
+    "top_bullets": [
+      "S&P 500 odepsal -3,70 % a sestoupil do pásma korekce, přičemž Nasdaq 100 ztratil -5,61 % a vymazal veškeré letošní zisky.",
+      "NVIDIA se propadla o -14,01 % a uzavřela nejdelší sérii týdenních poklesů od finanční krize v roce 2008.",
+      "Výnos 10letých amerických dluhopisů klesl o -14,0 bazických bodů na 4,91 % a index strachu VIX vyskočil o +26,20 % na 35,89 bodu."
+    ],
+    "has_critical_watchlist_event": true
+  },
+  "market_snapshot": [
+    {
+      "symbol": "SPX",
+      "label": "S&P 500",
+      "value": "6 910,39",
+      "change_pct": -3.7
+    },
+    {
+      "symbol": "NDX",
+      "label": "Nasdaq 100",
+      "value": "25 028,98",
+      "change_pct": -5.61
+    },
+    {
+      "symbol": "DJI",
+      "label": "Dow Jones",
+      "value": "48 147,33",
+      "change_pct": -1.93
+    },
+    {
+      "symbol": "RUT",
+      "label": "Russell 2000",
+      "value": "2 581,79",
+      "change_pct": -2.76
+    },
+    {
+      "symbol": "US10Y",
+      "label": "US 10Y Yield",
+      "value": "4,91 %",
+      "change_bp": -14.0
+    },
+    {
+      "symbol": "VIX",
+      "label": "CBOE VIX",
+      "value": "35,89",
+      "change_pct": 26.2
+    },
+    {
+      "symbol": "DXY",
+      "label": "US Dollar Index",
+      "value": "103,81",
+      "change_pct": -0.09
+    }
+  ],
+  "lead_story": {
+    "title": "Hysterie kolem AI přerůstá v systémový šok: Wall Street padá do korekce",
+    "summary_paragraphs": [
+      "Americké akciové trhy zažily jeden z nejtemnějších týdnů za poslední roky. S&P 500 se propadl o -3,70 % na 6 910,39 bodu a oficiálně vstoupil do korekce, zatímco technologický index Nasdaq 100 utrpěl drtivou ztrátu -5,61 % na 25 028,98 bodu a zcela vymazal své zhodnocení za rok 2026. Celková kapitalizace čipových a technologických gigantů utrpěla během jediného týdne bezprecedentní výprodej ve výši 2,3 bilionu dolarů.",
+      "Epicentrem paniky se stala NVIDIA, jejíž akcie ztratily -14,01 % a uzavřely sedmý týdenní pokles v řadě, což je nejdelší negativní série od roku 2008. Trhy začínají přehodnocovat dosavadní tezi o nekonečné návratnosti investic do umělé inteligence. Objem masivních medvědích obchodů na derivátových trzích signalizuje, že institucionální investoři agresivně zajišťují svá portfolia a stahují kapitál z rizikových technologických aktiv.",
+      "Makroekonomický a úrokový kontext přitom na síle výprodeje nic nemění — primárním hnacím motorem je ztráta důvěry v ocenění AI infrastruktury. Výnosy 10letých amerických státních dluhopisů sice klesly o -14,0 bazických bodů na 4,91 %, avšak pokles sazeb tentokrát nepřinesl tradicionální úlevu růstovým sektorům. Likvidita se naopak stěhuje do bezpečí hotovosti a defenzivních aktiv, což potvrdil i skok indexu VIX o +26,20 % na 35,89 bodu."
+    ],
+    "second_order_effects": [
+      "Rychlá likvidace pozic v polovodičích stahuje dolů i energetický sektor a utility závislé na budování AI datových center (CEG, VST), které odevzdaly své předchozí zisky.",
+      "Institucionální investoři prudce snižují páku, což vede k rotaci do hotovosti a krátkodobých dluhopisů.",
+      "Nárůst volatility na 35,89 bodu automaticky spouští rebalancování systematických fondů (CTA a risk-parity), což prohlubuje prodejní tlak na napjaté technologické valuace."
+    ],
+    "affected_tickers": [
+      "NVDA",
+      "MSFT",
+      "GOOGL",
+      "MU",
+      "CEG",
+      "VST"
+    ],
+    "sources": [
+      {
+        "name": "CNBC Top News",
+        "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+      },
+      {
+        "name": "MarketWatch Top Stories",
+        "url": "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03?mod=mw_rss_topstories"
+      }
+    ]
+  },
+  "watchlist_updates": [
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "Polovodiče",
+      "signal_score": 5,
+      "sentiment": "Bearish",
+      "event_type": "Regulace & Tržní šok",
+      "headline": "Nvidia čelí vyšetřování SEC po nejhorším týdnu za 18 let",
+      "analysis": "Akcie Nvidie se propadly o -14,01 % na 125,53 USD a uzavřely tak sedmý týdenní pokles v řadě, což je nejdelší negativní série od roku 2008. Situaci navíc zhoršily zprávy o tom, že společnost čelí oficiálnímu vyšetřování ze strany SEC ohledně prodejních praktik a poptávkového pipeline. Trh začíná masivně přehodnocovat roli Nvidie jako bezvýhradného pilíře technologického růstu.",
+      "thesis_impact": "Fundamentální teze utrpěla trhlinu kvůli regulatornímu tlaku a slábnoucímu momentum v poptávce po AI akcelerátorech, což vyžaduje extrémní opatrnost.",
+      "sources": [
+        {
+          "name": "Motley Fool",
+          "url": "https://www.fool.com/investing/2026/11/21/after-its-worst-week-in-18-years-nvidia-now-faces-an-sec-investigation-what-it-means-for-investors/?.tsrc=rss"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "company_name": "Micron Technology, Inc.",
+      "sector": "Polovodiče",
+      "signal_score": 4,
+      "sentiment": "Bearish",
+      "event_type": "Sektorový výprodej",
+      "headline": "Micron padá o 13,89 %, přestože management hlásí vysokou poptávku po HBM",
+      "analysis": "Akcie Micronu se propadly o -13,89 % na 594,51 USD v rámci plošného krachu čipového sektoru. Přestože vedení společnosti opakovaně deklaruje, že poptávka po pokročilých pamětech pro AI (HBM) zdaleka převyšuje výrobní kapacity a zákazníky nelze plně uspokojit, trh ignoruje fundamenty a valcuje celé odvětví.",
+      "thesis_impact": "Krátkodobý sentiment je extrémně negativní, avšak dlouhodobá teze postavená na nedostatku pamětí zůstává navzdory propadu platná.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/micron-shares-crash-despite-strong-213845047.html?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "company_name": "Constellation Energy Corporation",
+      "sector": "Energetika / Utility",
+      "signal_score": 3,
+      "sentiment": "Neutral",
+      "event_type": "Korekce ocenění",
+      "headline": "Constellation Energy odevzdává zisky z výsledků vlivem širšího tech výprodeje",
+      "analysis": "Akcie CEG oslabily o -5,80 % na 237,41 USD. Společnost sice nedávno reportovala silná čísla a zvýšila výhled díky poptávce po bezuhlíkové energii pro datová centra, avšak silná korelaca s technologickým sektorem ji stáhla dolů z nedávných maxim.",
+      "thesis_impact": "Dlouhodobý příběh dodávek jaderné energie pro AI zůstává silný, ale titul trpí vlnou plošného odstraňování rizik z portfolií.",
+      "sources": [
+        {
+          "name": "TIKR",
+          "url": "https://www.tikr.com/blog/constellation-energy-sinks-10-in-a-week-as-ai-stocks-slide-giving-back-its-earnings-jump-time-to-buy?ref=yahoofinance&tlnk=yf-261120-526gc6qr&.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "VST",
+      "company_name": "Vistra Corp.",
+      "sector": "Energetika / Utility",
+      "signal_score": 3,
+      "sentiment": "Neutral",
+      "event_type": "Sektorová korelce",
+      "headline": "Vistra klesá o 7,17 % v návaznosti na oslabení energeticko-technologického komplexu",
+      "analysis": "Vistra odepsala -7,17 % na 115,25 USD. Titul doplácí na ústup investorů z tzv. AI power trade, a to navzdory fundamentálnímu strukturálnímu nedostatku elektřiny na americkém trhu.",
+      "thesis_impact": "Silná korekce nabízí atraktivnější vstupní úrovně pro investory s delším horizontem, avšak volatilita v sektoru přetrvává.",
+      "sources": [
+        {
+          "name": "Trefis",
+          "url": "https://www.trefis.com/stock/vst/articles/627175/has-buying-the-dips-in-vistra-stock-paid-off/?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Technologie",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Běžná tržní korelce",
+      "headline": "Microsoft odolává nejhorším propadům lépe díky defenzivnější povaze",
+      "analysis": "Akcie Microsoftu klesly o -2,77 % na 484,52 USD, čímž výrazně překonaly širší trh i čipový sektor. Investoři nadále vnímají Microsoft jako bezpečnější přístav v rámci AI ekosystému s diverzifikovanými příjmy.",
+      "thesis_impact": "Stabilní pozice v portfoliu; relativní síla vůči čipovým firmám potvrzuje kvalitu rozvahy.",
+      "sources": [
+        {
+          "name": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/20/mets-owner-steve-cohens-fund-dumped-nearly-all-of-its-amd-and-bet-1-billion-that-microsoft-is-the-safer-ai-stock-amd-has-fallen-31-since/?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Běžná tržní korelce",
+      "headline": "Alphabet kopíruje pokles trhu, ztráty zůstávají pod průměrem Nasdaq",
+      "analysis": "Alphabet odepsal -2,70 % na 265,29 USD. Podobně jako v případě Microsoftu drží titul nad vodou stabilní reklamní byznys a robustní cash flow, které zmírňují dopady plošného výprodeje technologických akcií.",
+      "thesis_impact": "Dlouhodobá investiční teze zůstává nedotčena, krátkodobý pohyb je odrazem celkové makro likvidace.",
+      "sources": [
+        {
+          "name": "The Street",
+          "url": "https://www.thestreet.com/investing/stocks/morgan-stanley-sends-a-strong-signal-to-google-stock-investors?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "NEE",
+      "company_name": "NextEra Energy, Inc.",
+      "sector": "Energetika / Utility",
+      "signal_score": 1,
+      "sentiment": "Neutral",
+      "event_type": "Nízká volatilita",
+      "headline": "NextEra Energy vykazuje vysokou odolnost s minimální denní změnou",
+      "analysis": "Akcie NEE klesly pouze o -0,41 % na 83,45 USD. Tradiční profil společnosti a stabilní regulované výnosy ji izolovaly od dramatických výkyvů v růstové části trhu.",
+      "thesis_impact": "Defenzivní charakteristika portfolia se plně potvrzuje.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-nextera-nee-2-3-153008150.html?.tsrc=rss"
+        }
+      ]
+    }
+  ],
+  "today_calendar": {
+    "macro_events": [
+      {
+        "time_cet": "15:45",
+        "event": "Index nákupních manažerů v průmyslu a službách (S&P Global US Manufacturing & Services PMI)",
+        "importance": "High",
+        "consensus": "52,2",
+        "previous": "52,0"
+      },
+      {
+        "time_cet": "16:00",
+        "event": "Spotřebitelská důvěra University of Michigan (UoM Consumer Sentiment)",
+        "importance": "Medium",
+        "consensus": "71,5",
+        "previous": "70,5"
+      }
+    ],
+    "watchlist_earnings": []
+  }
+}
