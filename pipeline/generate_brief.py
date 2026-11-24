@@ -51,7 +51,13 @@ EDITIONS_DIR = DATA_DIR / "editions"
 INDEX_PATH = DATA_DIR / "index.json"
 
 DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
-FALLBACK_MODELS = ["gemini-3.1-flash-lite", "gemini-4-hydrogen", "gemma-4-31b-it"]
+FALLBACK_MODELS = [
+    "gemini-3.1-flash-lite",
+    "gemini-4-hydrogen",
+    "gemma-4-31b-it",
+    "gemma-4-26b-a4b-it",
+]
+ENABLE_SEARCH_DEFAULT = os.environ.get("ENABLE_GOOGLE_SEARCH", "").lower() in ("1", "true", "yes")
 SEC_USER_AGENT = (
     os.environ.get("SEC_USER_AGENT", "").strip()
     or "USMarketMorningBrief brief@example.com"
@@ -427,9 +433,15 @@ def main() -> int:
         help=f"Gemini model (výchozí: {DEFAULT_MODEL}).",
     )
     parser.add_argument(
-        "--no-search",
+        "--enable-search",
         action="store_true",
-        help="Vypne Google Search grounding tool (použije pouze RSS + yfinance data).",
+        default=ENABLE_SEARCH_DEFAULT,
+        help="Zapne Google Search grounding tool (vyžaduje placený Gemini API tarif).",
+    )
+    parser.add_argument(
+        "--skip-if-exists",
+        action="store_true",
+        help="Pokud již vydání pro dnešní datum existuje, tiše skončí bez nového generování (pro záložní cron).",
     )
     parser.add_argument(
         "--dry-run",
@@ -440,6 +452,10 @@ def main() -> int:
 
     now_prague = datetime.now(PRAGUE_TZ)
     edition_date = args.date or now_prague.strftime("%Y-%m-%d")
+
+    if args.skip_if_exists and (EDITIONS_DIR / f"{edition_date}.json").exists():
+        logger.info("Vydání pro %s již existuje — přeskakuji (--skip-if-exists).", edition_date)
+        return 0
     yesterday_str = (
         datetime.strptime(edition_date, "%Y-%m-%d") - timedelta(days=1)
     ).strftime("%Y-%m-%d")
@@ -466,7 +482,7 @@ def main() -> int:
     editorial = generate_editorial_with_gemini(
         prompt=prompt,
         model=args.model,
-        enable_search=not args.no_search,
+        enable_search=args.enable_search,
     )
 
     # Zajistíme 100% konzistenci příznaku has_critical_watchlist_event s daty

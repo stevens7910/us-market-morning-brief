@@ -2,8 +2,10 @@ name: Morning Brief — Generate & Deploy
 
 on:
   schedule:
-    # Každý pracovní den (Po–Pá) v 05:17 UTC (06:17 CET v zimě / 07:17 CEST v létě; mimo špičku :00/:30)
+    # Každý pracovní den (Po–Pá): hlavní běh v 05:17 UTC (06:17 CET / 07:17 CEST)
+    # a záložní běh v 06:43 UTC pro případ přechodného 503 výpadku Gemini API
     - cron: '17 5 * * 1-5'
+    - cron: '43 6 * * 1-5'
   workflow_dispatch:
     inputs:
       edition_date:
@@ -49,10 +51,13 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.5-flash-lite' }}
+          ENABLE_GOOGLE_SEARCH: ${{ vars.ENABLE_GOOGLE_SEARCH || 'false' }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           if [ -n "${{ inputs.edition_date }}" ]; then
             python pipeline/generate_brief.py --date "${{ inputs.edition_date }}"
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            python pipeline/generate_brief.py --skip-if-exists
           else
             python pipeline/generate_brief.py
           fi
