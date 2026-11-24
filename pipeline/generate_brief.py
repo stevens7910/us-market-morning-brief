@@ -51,7 +51,7 @@ EDITIONS_DIR = DATA_DIR / "editions"
 INDEX_PATH = DATA_DIR / "index.json"
 
 DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
-FALLBACK_MODELS = ["gemini-3.1-flash-lite", "gemini-4-hydrogen"]
+FALLBACK_MODELS = ["gemini-3.1-flash-lite", "gemini-4-hydrogen", "gemma-4-31b-it"]
 SEC_USER_AGENT = (
     os.environ.get("SEC_USER_AGENT", "").strip()
     or "USMarketMorningBrief brief@example.com"
@@ -287,16 +287,43 @@ def generate_editorial_with_gemini(
 
     client = genai.Client(api_key=api_key)
 
-    # Sestavíme seznam kandidátů: primární model + fallbacky (bez duplicit)
+    # Sestavíme seznam kandidátů: nejprve modely podporující Google Search,
+    # poté fallback bez vyhledávání (včetně Gemma) při 503/429 výpadcích.
     models_to_try = [model] + [m for m in FALLBACK_MODELS if m != model]
     attempts: list[tuple[str, bool]] = []
+    if enable_search:
+        for m in models_to_try:
+            if not m.startswith("gemma-"):
+                attempts.append((m, True))
     for m in models_to_try:
-        if enable_search:
-            attempts.append((m, True))
         attempts.append((m, False))
 
+    recoverable_tokens = (
+        "429",
+        "too_many_requests",
+        "quota",
+        "500",
+        "502",
+        "503",
+        "504",
+        "service_unavailable",
+        "unavailable",
+        "high demand",
+        "overloaded",
+        "internal",
+        "timeout",
+        "deadline",
+        "not_found",
+        "404",
+        "permission",
+        "invalid_argument",
+    )
+
     last_error: Exception | None = None
-    for candidate_model, use_search in attempts:
+    for idx, (candidate_model, use_search) in enumerate(attempts):
+        if idx > 0:
+            time.sleep(3)
+
         request_kwargs: dict = {
             "model": candidate_model,
             "system_instruction": SYSTEM_INSTRUCTION,
@@ -326,17 +353,17 @@ def generate_editorial_with_gemini(
             return EditorialGenerationOutput.model_validate_json(output_text)
         except Exception as exc:
             last_error = exc
-            err_msg = str(exc)
-            is_quota_or_unavailable = any(
-                token in err_msg.lower()
-                for token in ("429", "too_many_requests", "quota", "not_found", "404", "permission")
+            err_msg = str(exc).lower()
+            is_recoverable = any(token in err_msg for token in recoverable_tokens) or isinstance(
+                exc, (ValueError, RuntimeError)
             )
-            if is_quota_or_unavailable:
+            if is_recoverable:
                 logger.warning(
-                    "Model %s (google_search=%s) selhal (%s). Zkouším další variantu...",
+                    "Model %s (google_search=%s) selhal (%s: %s). Zkouším další variantu...",
                     candidate_model,
                     use_search,
                     type(exc).__name__,
+                    str(exc)[:220],
                 )
                 continue
             raise

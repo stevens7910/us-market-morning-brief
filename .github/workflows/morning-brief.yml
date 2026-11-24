@@ -2,8 +2,8 @@ name: Morning Brief — Generate & Deploy
 
 on:
   schedule:
-    # Každý pracovní den (Po–Pá) v 05:30 UTC (06:30 CET v zimě / 07:30 CEST v létě)
-    - cron: '30 5 * * 1-5'
+    # Každý pracovní den (Po–Pá) v 05:17 UTC (06:17 CET v zimě / 07:17 CEST v létě; mimo špičku :00/:30)
+    - cron: '17 5 * * 1-5'
   workflow_dispatch:
     inputs:
       edition_date:
