@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "edition_date": "2026-11-24",
+    "generated_at_cet": "21:32 CET",
+    "market_regime": "Cautious / Rates-Driven",
+    "headline": "Křehká dominance: Washington a regulatorní bariéry otřásají AI rally",
+    "reading_time_minutes": 4
+  },
+  "notification_payload": {
+    "short_title": "Chip Sector Sell-off Intensifies Amid Regulatory Pressures",
+    "top_bullets": [
+      "Technologický sektor čelí prudkému výprodeji, index Nasdaq 100 klesl o 2,39 % v reakci na obavy z regulace AI a restrikce čipového exportu.",
+      "Micron Technology propadl o 11,54 % po varování Bank of America před začínající vlnou snižování objednávek v sektoru polovodičů.",
+      "NVIDIA ztrácí 7,41 % v důsledku politického tlaku ve Washingtonu a odhadů ztrát příjmů v řádu 44 miliard USD kvůli čínským exportním pravidlům."
+    ],
+    "has_critical_watchlist_event": true
+  },
+  "market_snapshot": [
+    {
+      "symbol": "SPX",
+      "label": "S&P 500",
+      "value": "7 177,36",
+      "change_pct": -0.83
+    },
+    {
+      "symbol": "NDX",
+      "label": "Nasdaq 100",
+      "value": "26 105,87",
+      "change_pct": -2.39
+    },
+    {
+      "symbol": "DJI",
+      "label": "Dow Jones",
+      "value": "49 899,19",
+      "change_pct": 0.61
+    },
+    {
+      "symbol": "RUT",
+      "label": "Russell 2000",
+      "value": "2 685,91",
+      "change_pct": 0.61
+    },
+    {
+      "symbol": "US10Y",
+      "label": "US 10Y Yield",
+      "value": "4,90 %",
+      "change_bp": -1.4
+    },
+    {
+      "symbol": "VIX",
+      "label": "CBOE VIX",
+      "value": "26,99",
+      "change_pct": 1.39
+    },
+    {
+      "symbol": "DXY",
+      "label": "US Dollar Index",
+      "value": "103,80",
+      "change_pct": -0.5
+    }
+  ],
+  "lead_story": {
+    "title": "Křehká dominance: Washington a regulatorní bariéry otřásají AI rally",
+    "summary_paragraphs": [
+      "Trhy s polovodiči zažívají korekci, která testuje odolnost celého technologického sektoru. Zatímco NVIDIA se pod tlakem 7,41% poklesu snaží ustát politický tlak a výslech v Kongresu, investoři přehodnocují valuace celého dodavatelského řetězce. Dominance Nvidie je přímo ohrožena přísnějšími exportními pravidly administrativy, které podle analytiků Jefferies již stály společnost přes 44 miliard USD na ušlých příjmech.",
+      "Sentimentu na trhu nepřidává ani zpráva o 'Code Red' v Microsoftu po rozsáhlém technologickém výpadku. Tato událost zdůrazňuje rizika spojená s masivním nasazením AI infrastruktury, kde i sebemenší provozní chyby mohou vést k systémovým rizikům pro hlavní cloudové poskytovatele. Investoři začínají být citliví na každou známku zpomalení růstu výdajů na AI, což se přelévá do celého sektoru.",
+      "Výprodej v akciích Micron Technology o 11,54 % je varovným signálem pro celý segment paměťových čipů. Analytici Bank of America varují, že cyklický pokles objednávek právě začal, což v kombinaci s vysokým oceněním vytváří toxický mix pro krátkodobé držitele akcií. Index S&P 500 pod tlakem těchto faktorů ustoupil na 7 177,36 bodů."
+    ],
+    "second_order_effects": [
+      "Přelití likvidity z technologických akcií do utilitních firem, které těží z predikovatelnější poptávky po energii pro datová centra.",
+      "Zvýšená volatilita (VIX na 26,99) indikuje defenzivní posun portfolií investorů směrem k dluhopisům, což stlačuje výnosy 10letých vládních dluhopisů na 4,90 %.",
+      "Potenciální revize kapitálových výdajů u hlavních cloudových hráčů (GOOGL, MSFT) v reakci na provozní rizika a regulační nejistotu."
+    ],
+    "affected_tickers": [
+      "NVDA",
+      "MU",
+      "MSFT",
+      "GOOGL"
+    ],
+    "sources": [
+      {
+        "name": "CNBC Markets",
+        "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html"
+      },
+      {
+        "name": "Tikr Blog",
+        "url": "https://www.tikr.com/blog/trumps-southeast-asia-chip-rule-has-cost-nvidia-44-billion-of-revenue-per-jefferies-huang-cant-undo-it"
+      }
+    ]
+  },
+  "watchlist_updates": [
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "Technologie",
+      "signal_score": 5,
+      "sentiment": "Bearish",
+      "event_type": "Regulace & Politický tlak",
+      "headline": "Jensen Huang pod politickým tlakem a čelí výslechům v Kongresu",
+      "analysis": "Akcie reagují na kumulativní efekt exportních restrikcí a politické nejistoty. SEC podání 8-K (5.02) potvrzuje vnitřní změny v řízení. Trh reaguje na zprávu Jefferies o ztrátě 44 miliard USD v tržbách, což vyvolalo vlnu snižování cílových cen analytiky o 25 %.",
+      "thesis_impact": "Fundamentální teze růstu je ohrožena politickou bariérou, která omezuje adresovatelný trh v Asii; doporučujeme zvýšenou opatrnost.",
+      "sources": [
+        {
+          "name": "SEC EDGAR 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html"
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "company_name": "Micron Technology, Inc.",
+      "sector": "Technologie",
+      "signal_score": 5,
+      "sentiment": "Bearish",
+      "event_type": "Sektorový downgrade",
+      "headline": "BofA varuje před začátkem cyklického poklesu objednávek v čipech",
+      "analysis": "Micron klesl o 11,54 % po negativním komentáři Bank of America. Analytici naznačují, že poptávka v sektoru dosáhla svého vrcholu a prostor pro růst se zužuje. Trh spekuluje o vyčerpání buyback programu jako podpůrného faktoru.",
+      "thesis_impact": "Krátkodobě negativní výhled pro celý polovodičový hardware; teze o růstu marží skrze AI poptávku je nyní zpochybněna cyklickým ochlazením.",
+      "sources": [
+        {
+          "name": "Tikr",
+          "url": "https://www.tikr.com/blog/warning-for-micron-investors-bank-of-america-says-semis-cuts-have-started"
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Technologie",
+      "signal_score": 4,
+      "sentiment": "Bearish",
+      "event_type": "Provozní riziko",
+      "headline": "Microsoft vyhlásil 'Code Red' po rekordním technologickém výpadku",
+      "analysis": "Po historicky nejvíce narušujícím výpadku firma vyhlásila krizový stav. Investoři obávají dopadu na důvěru korporátních klientů v cloudovou infrastrukturu Azure, která je klíčovým motorem růstu.",
+      "thesis_impact": "Zvýšené riziko operačních nákladů a potenciální zpomalení adopce cloudových služeb u rizikově averzních klientů.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/article/microsoft-declares-a-code-red-in-the-middle-of-a-patchpocalypse-193740712.html"
+        }
+      ]
+    }
+  ],
+  "today_calendar": {
+    "macro_events": [
+      {
+        "time_cet": "15:45",
+        "event": "S&P Global US Manufacturing PMI (předběžné)",
+        "importance": "Medium",
+        "consensus": "52,2",
+        "previous": "52,4"
+      },
+      {
+        "time_cet": "16:00",
+        "event": "Index spotřebitelské důvěry Conference Board",
+        "importance": "High",
+        "consensus": "112,0",
+        "previous": "108,7"
+      }
+    ],
+    "watchlist_earnings": [
+      {
+        "ticker": "NVDA",
+        "timing": "Reportováno",
+        "eps_estimate": "$0,88"
+      }
+    ]
+  }
+}

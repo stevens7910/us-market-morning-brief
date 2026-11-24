@@ -1,5 +1,17 @@
 [
   {
+    "edition_date": "2026-11-24",
+    "headline": "Křehká dominance: Washington a regulatorní bariéry otřásají AI rally",
+    "market_regime": "Cautious / Rates-Driven",
+    "affected_tickers": [
+      "NVDA",
+      "MU",
+      "MSFT",
+      "GOOGL"
+    ],
+    "has_critical_watchlist_event": true
+  },
+  {
     "edition_date": "2026-11-21",
     "headline": "Hysterie kolem AI přerůstá v systémový šok: Wall Street padá do korekce",
     "market_regime": "Risk-Off",
