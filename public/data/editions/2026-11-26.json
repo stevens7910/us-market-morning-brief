@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "edition_date": "2026-11-26",
+    "generated_at_cet": "16:25 CET",
+    "market_regime": "Cautious / Rates-Driven",
+    "headline": "Inflační setrvačnost a AI korekce: Trhy testují odolnost technologického sektoru",
+    "reading_time_minutes": 4
+  },
+  "notification_payload": {
+    "short_title": "Inflační tlaky komplikují Fed, zatímco polovodiče a energetika hledají dno",
+    "top_bullets": [
+      "Preferovaný inflační ukazatel Fedu (PCE) v říjnu zrychlil na 3,8 %, což zvyšuje tlak na restriktivní měnovou politiku.",
+      "Paměťové čipy zůstávají v nedostatku do roku 2028, což nahrává ocenění Micronu, navzdory nedávným výprodejům v sektoru.",
+      "Constellation Energy dokončila prodej plynových aktiv v objemu 4,4 GW za účelem reinvestice do čistého jádra pro AI."
+    ],
+    "has_critical_watchlist_event": true
+  },
+  "market_snapshot": [
+    {
+      "symbol": "SPX",
+      "label": "S&P 500",
+      "value": "7 182,78",
+      "change_pct": -0.25
+    },
+    {
+      "symbol": "NDX",
+      "label": "Nasdaq 100",
+      "value": "26 046,90",
+      "change_pct": -0.64
+    },
+    {
+      "symbol": "DJI",
+      "label": "Dow Jones",
+      "value": "50 182,95",
+      "change_pct": 0.33
+    },
+    {
+      "symbol": "RUT",
+      "label": "Russell 2000",
+      "value": "2 704,06",
+      "change_pct": 0.71
+    },
+    {
+      "symbol": "US10Y",
+      "label": "US 10Y Yield",
+      "value": "4,85 %",
+      "change_bp": -5.6
+    },
+    {
+      "symbol": "VIX",
+      "label": "CBOE VIX",
+      "value": "26,90",
+      "change_pct": -4.91
+    },
+    {
+      "symbol": "DXY",
+      "label": "US Dollar Index",
+      "value": "103,71",
+      "change_pct": 0.04
+    }
+  ],
+  "lead_story": {
+    "title": "Inflační setrvačnost a AI korekce: Trhy testují odolnost technologického sektoru",
+    "summary_paragraphs": [
+      "Americké finanční trhy čelí na konci listopadu komplexnímu testu, v němž se střetávají makroekonomická realita a valuace technologických gigantů. Zveřejněná data ukazují, že preferovaný inflační index Fedu (PCE) v říjnu zrychlil na 3,8 %, čímž vyslal varovný signál investorům spoléhajícím na brzké uvolňování měnové politiky. S 10letým americkým výnosem na úrovni 4,85 % se kapitálové náklady nadále drží na úrovních, které nutí portfoliomanažery k přehodnocování rizikových prémií zejména v segmentu vysoce ohodnocených růstových titulů.",
+      "Technologický sektor v posledních seancích prochází výraznou volatilitou. Index Nasdaq 100 odepsal 0,64 % na 26 046,90 bodu, přičemž tlak na prodeje zažívají lídři jako NVIDIA (-3,91 %) či Micron Technology (-4,53 %). Investoři přehodnocují tempo návratnosti masivních investic do umělé inteligence. Na druhou stranu globální akciové trhy vykazují známky lovu na slevy ('bargain hunting'), podpořené robustností americké ekonomiky a přetrvávající poptávkou po klíčové infrastruktuře.",
+      "Zásadním strukturálním faktorem zůstává energetická transformace a provázanost datových center s energetickými utilitami. Firmy jako Constellation Energy (CEG) či Vistra (VST) aktivně restrukturalizují svá portfolia, aby uspokojily hlad gigantů po spolehlivém zdroji bezuhlíkové energie. Současná korekce tak představuje spíše zdravou konsolidaci po předchozích maximech než změnu primárního strukturálního trendu."
+    ],
+    "second_order_effects": [
+      "Vyšší reálné sazby prodlužují návratnost investic do AI hardware, což nutí subdodavatele k vyšší maržové kázni.",
+      "Přesun kapitálu do hodnotových sektorů a utilit (XLU) stabilizuje defenzivní portfolia, zatímco růstové ETF zaznamenávají selektivní rebalancování.",
+      "Nedostatek paměťových čipů potvrzený dodavatelským řetězcem vytváří cenovou sílu pro výrobce jako Micron navzdory širšímu poklesu trhu."
+    ],
+    "affected_tickers": [
+      "NVDA",
+      "MU",
+      "CEG",
+      "VST",
+      "MSFT"
+    ],
+    "sources": [
+      {
+        "name": "CNBC Markets",
+        "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
+      },
+      {
+        "name": "MarketWatch Top Stories",
+        "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html"
+      }
+    ]
+  },
+  "watchlist_updates": [
+    {
+      "ticker": "MU",
+      "company_name": "Micron Technology, Inc.",
+      "sector": "Technologie",
+      "signal_score": 5,
+      "sentiment": "Bullish",
+      "event_type": "Výsledky & Tržní poptávka",
+      "headline": "Analytici označují akcie za comically cheap, nedostatek pamětí potrvá do 2028",
+      "analysis": "Micron čelí prodejnímu tlaku a akcie uzavřely na 601,25 USD (-4,53 %). Přesto přední hlasy na Wall Street, včetně Jima Cramera, označují ocenění při zhruba trojnásobku zisku za extrémně atraktivní. Zprávy od HPE navíc potvrzují, že nedostatek pokročilých pamětí (HBM) pro AI infrastrukturu zůstane akutní až do roku 2028.",
+      "thesis_impact": "Fundamentální teze zůstává silně býčí díky trvalé strukturální poptávce a vysoké cenové disciplíně v oligopolním prostředí paměťových čipů.",
+      "sources": [
+        {
+          "name": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/26/jim-cramer-says-micron-stock-is-comically-cheap-at-about-3-times-earnings/?.tsrc=rss"
+        },
+        {
+          "name": "The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/11/26/is-micron-stock-a-buy-after-hpe-said-memory-will-stay-scarce-into-2028/?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "company_name": "Constellation Energy Corporation",
+      "sector": "Energetika / Utility",
+      "signal_score": 4,
+      "sentiment": "Bullish",
+      "event_type": "M&A a Divestice",
+      "headline": "Dokončení prodeje plynových aktiv za 4,4 miliardy dolarů uvolňuje kapitál",
+      "analysis": "Společnost úspěšně uzavřela prodej svých 4,4GW portfolia plynových elektráren (bývalá Calpine PJM aktiva) společnosti LS Power. Tento krok umožňuje Constellation plně se soustředit na jadernou energetiku s nulovými emisemi, která je klíčová pro napájení nových datových center technologických gigantů.",
+      "thesis_impact": "Cílená alokace kapitálu do čistého jádra posiluje pozici firmy jako prémiového dodavatele energetické infrastruktury pro AI.",
+      "sources": [
+        {
+          "name": "Power Technology",
+          "url": "https://www.power-technology.com/news/constellation-natural-gas-fired-power-plants/?.tsrc=rss"
+        },
+        {
+          "name": "Yahoo Finance Energy",
+          "url": "https://www.yahoo.com/energy/articles/ls-power-completes-acquisition-4-213800844.html?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "Technologie",
+      "signal_score": 4,
+      "sentiment": "Neutral",
+      "event_type": "Strategický vývoj",
+      "headline": "Tlak na AI trade pokračuje, pozornost se upírá na rebalancování portfolií",
+      "analysis": "Akcie NVIDIA oslabily o 3,91 % na 149,30 USD v rámci širšího vybírání zisků v polovodičovém sektoru. Přestože politická podpora a návrat Jensen Huanga vzbuzují optimismus, trh řeší otázku udržitelnosti marží a nasycení prvotní vlny poptávky po akcelerátorech.",
+      "thesis_impact": "Krátkodobá volatilita vyžaduje opatrnost, dlouhodobá teze lídra v AI ekosystému však zůstává nedotčená.",
+      "sources": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/nvidia-and-the-whole-ai-trade-arent-out-of-the-woods-not-by-a-long-shot-bccc0025?mod=mw_rss_topstories"
+        }
+      ]
+    },
+    {
+      "ticker": "VST",
+      "company_name": "Vistra Corp.",
+      "sector": "Energetika / Utility",
+      "signal_score": 3,
+      "sentiment": "Bullish",
+      "event_type": "Regulace & Insider akce",
+      "headline": "Morgan Stanley udržuje vysokou cílovou cenu, registrováno hlášení Form 4",
+      "analysis": "Vistra se obchoduje na 121,32 USD (+0,50 %), přičemž institucionální analytici nadále vidí v sektoru silný růstový potenciál spojený s poptávkou po stabilní baseload elektřině. V rámci administrativních povinností bylo podáno hlášení Form 4, které reflektuje standardní transakce insiderů.",
+      "thesis_impact": "Stabilní růst podpořený poptávkou datových center drží Vistru v pozici atraktivní infrastrukturální investice.",
+      "sources": [
+        {
+          "name": "SEC EDGAR Form 4",
+          "url": "https://www.sec.gov/Archives/edgar/data/1692819/000194049426000010/xslF345X06/wk-form4_1795613333.xml"
+        },
+        {
+          "name": "TIKR / Yahoo Finance",
+          "url": "https://www.tikr.com/blog/vistra-has-slumped-for-a-year-why-morgan-stanley-still-sees-82-upside?ref=yahoofinance&tlnk=yf-261125-x7wjx655&.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Technologie",
+      "signal_score": 3,
+      "sentiment": "Neutral",
+      "event_type": "Institucionální tok",
+      "headline": "Silné čisté nákupy přes ETF při mírném poklesu ceny",
+      "analysis": "Microsoft zaznamenal na konci listopadu solidní příliv kapitálu prostřednictvím ETF nákupů (přes 91 milionů USD), přestože akcie korigovaly o 1,25 % na 489,93 USD v návaznosti na širší makro náladu.",
+      "thesis_impact": "Institucionální poptávka funguje jako silný polštář proti hlubším propadům.",
+      "sources": [
+        {
+          "name": "Yahoo Finance Markets",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-msft-sees-91-7-110049983.html?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "sector": "Komunikační služby",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Tržní kontext",
+      "headline": "Akcie oslabují o 2,13 %, instituce upravují pozice",
+      "analysis": "Alphabet uzavřel na 273,10 USD pod vlivem rotace kapitálu a rebalancování portfolií velkých investorů (např. snížení expozice ze strany vybraných fondů). Fundamentální pozice v oblasti cloud computingu a AI zůstává stabilní.",
+      "thesis_impact": "Krátkodobé snížení alokace velkými hráči vytváří tlak na cenu, bez zásadní změny dlouhodobé teze.",
+      "sources": [
+        {
+          "name": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/26/tepper-trims-alphabet-by-46-and-dumps-broadcom-amd-while-backing-micron-and-oracle/?.tsrc=rss"
+        }
+      ]
+    },
+    {
+      "ticker": "NEE",
+      "company_name": "NextEra Energy, Inc.",
+      "sector": "Energetika / Utility",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Tržní kontext",
+      "headline": "Akcie mírně rostou po vyřešení antimonopolního šetření fúze",
+      "analysis": "NextEra Energy posílila o 0,98 % na 85,41 USD. Trh pozitivně kvituje uzavření dřívějších regulačních prověrek, avšak sektor jako celek prochází mírným odlivem kapitálu z defenzivních utilit do rizikovějších aktiv.",
+      "thesis_impact": "Ocenění se jeví jako férové s omezeným prostorem pro prudký růst v prostředí vysokých sazeb.",
+      "sources": [
+        {
+          "name": "Yahoo Finance Energy",
+          "url": "https://finance.yahoo.com/energy/articles/nextera-energy-nee-stock-looks-130945357.html?.tsrc=rss"
+        }
+      ]
+    }
+  ],
+  "today_calendar": {
+    "macro_events": [
+      {
+        "time_cet": "14:30",
+        "event": "HDP USA (Q3 - zpřesněný odhad)",
+        "importance": "High",
+        "consensus": "+2,8 %",
+        "previous": "+2,8 %"
+      },
+      {
+        "time_cet": "14:30",
+        "event": "Týdenní žádosti o podporu v nezaměstnanosti",
+        "importance": "Medium",
+        "consensus": "225 tis.",
+        "previous": "218 tis."
+      },
+      {
+        "time_cet": "16:00",
+        "event": "Prodeje nových domů (říjen)",
+        "importance": "Medium",
+        "consensus": "720 tis.",
+        "previous": "738 tis."
+      }
+    ],
+    "watchlist_earnings": []
+  }
+}

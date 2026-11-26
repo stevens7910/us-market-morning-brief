@@ -1,5 +1,18 @@
 [
   {
+    "edition_date": "2026-11-26",
+    "headline": "Inflační setrvačnost a AI korekce: Trhy testují odolnost technologického sektoru",
+    "market_regime": "Cautious / Rates-Driven",
+    "affected_tickers": [
+      "NVDA",
+      "MU",
+      "CEG",
+      "VST",
+      "MSFT"
+    ],
+    "has_critical_watchlist_event": true
+  },
+  {
     "edition_date": "2026-11-24",
     "headline": "Křehká dominance: Washington a regulatorní bariéry otřásají AI rally",
     "market_regime": "Cautious / Rates-Driven",
