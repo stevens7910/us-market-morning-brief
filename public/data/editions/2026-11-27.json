@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "edition_date": "2026-11-27",
+    "generated_at_cet": "16:12 CET",
+    "market_regime": "Cautious / Rates-Driven",
+    "headline": "Black Friday na trzích: Short-covering rally po 6bilionovém výprodeji narazila na tvrdou realitu sazeb",
+    "reading_time_minutes": 4
+  },
+  "notification_payload": {
+    "short_title": "Black Friday rally přináší úlevu, výnosy 10Y dluhopisů však testují 4,90 %",
+    "top_bullets": [
+      "Index S&P 500 zpevnil na 7 235,43 bodů (+0,73 %), trhy však nadále vykazují znaky probíhající korekce.",
+      "Výnos amerických 10letých státních dluhopisů vzrostl o 5,0 bazických bodů na 4,90 %, což tlačí na valuace technologických růstových aktiv.",
+      "Mikron Technology (MU) roste o 3,10 % díky návratu investorů k paměťovým čipům, zatímco Nvidia (NVDA) po předchozím propadu zaostává."
+    ],
+    "has_critical_watchlist_event": true
+  },
+  "market_snapshot": [
+    {
+      "symbol": "SPX",
+      "label": "S&P 500",
+      "value": "7 235,43",
+      "change_pct": 0.73
+    },
+    {
+      "symbol": "NDX",
+      "label": "Nasdaq 100",
+      "value": "26 308,02",
+      "change_pct": 1.0
+    },
+    {
+      "symbol": "DJI",
+      "label": "Dow Jones",
+      "value": "50 523,85",
+      "change_pct": 0.68
+    },
+    {
+      "symbol": "RUT",
+      "label": "Russell 2000",
+      "value": "2 727,66",
+      "change_pct": 0.87
+    },
+    {
+      "symbol": "US10Y",
+      "label": "US 10Y Yield",
+      "value": "4,90 %",
+      "change_bp": 5.0
+    },
+    {
+      "symbol": "VIX",
+      "label": "CBOE VIX",
+      "value": "27,00",
+      "change_pct": 0.75
+    },
+    {
+      "symbol": "DXY",
+      "label": "US Dollar Index",
+      "value": "103,97",
+      "change_pct": 0.29
+    }
+  ],
+  "lead_story": {
+    "title": "Black Friday na trzích: Short-covering rally po 6bilionovém výprodeji narazila na tvrdou realitu sazeb",
+    "summary_paragraphs": [
+      "Americké akciové trhy vstoupily do zkrácené sváteční seance po Dni díkůvzdání v silném růstovém módu, když hlavní indexy mazaly předchozí ztráty. S&P 500 uzavřel na 7 235,43 bodu (+0,73 %) a Nasdaq 100 přidal 1,00 % na 26 308,02 bodu. Přestože Wall Street slaví nejlepší týdenní výkon od dubna 2025, analytici varují, že aktuální odraz po prudké korekci může být pouze klasickým bear-market rally a short-covering vlnou po předchozím masivním odlivu kapitálu.",
+      "Klíčovým makroekonomickým faktorem zůstává vývoj na dluhopisovém trhu. Výnos 10letých amerických státních dluhopisů (US10Y) vyskočil o 5,0 bazických bodů na 4,90 %. Růst reálných sazeb bezprostředně doléhá na kapitálově náročné sektory a technologické giganty, kteří čelí přehodnocení nákladů na kapitál. Index CBOE VIX se drží na zvýšených 27,00 bodu (+0,75 %), což odráží trvající nervozitu investorů ohledně udržitelnosti valuací v prostředí vysokých sazeb a politických tlaků na statistické úřady.",
+      "Zatímco segment paměťových čipů a vybrané cyklické tituly zaznamenaly prudký oživení, primární lídr umělé inteligence Nvidia tentokrát zaostal a z Black Friday rally vynechal. To podtrhuje rostoucí selektivitu trhu, kde institucionální investoři začínají přehodnocovat koncentrační riziko v AI infrastruktuře a hledají maržovou udržitelnost u dodavatelů napříč dodavatelským řetězcem."
+    ],
+    "second_order_effects": [
+      "Růst výnosů 10Y dluhopisů k 4,90 % zvyšuje diskontní sazby pro budoucí cash flow, což nadále komprimuje násobky P/E u vysoce oceněných softwarových a polovodičových firem.",
+      "Vysoká volatilita (VIX na 27,00) nutí opční tradery k zajišťování portfolií, což omezuje prostor pro agresivní expanzi do růstových sektorů.",
+      "Energetické utility s exposicí na datová centra (CEG, VST) čelí tlaku kvůli slábnoucímu optimismu ohledně okamžité monetizace AI poptávky."
+    ],
+    "affected_tickers": [
+      "NVDA",
+      "MU",
+      "MSFT",
+      "CEG",
+      "VST"
+    ],
+    "sources": [
+      {
+        "name": "CNBC Markets",
+        "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html"
+      },
+      {
+        "name": "MarketWatch",
+        "url": "https://www.marketwatch.com/story/nvidias-stock-has-tumbled-27-over-one-chaotic-month-the-next-big-test-lies-in-the-week-ahead-06449777"
+      }
+    ]
+  },
+  "watchlist_updates": [
+    {
+      "ticker": "MU",
+      "company_name": "Micron Technology, Inc.",
+      "sector": "Polovodiče",
+      "signal_score": 4,
+      "sentiment": "Bullish",
+      "event_type": "Tržní sentiment & Výsledky",
+      "headline": "Micron roste o 3,10 % díky návratu investorů k opomíjeným paměťovým čipům",
+      "analysis": "Akcie Micron Technology posílily na 619,88 USD (+3,10 %) v návaznosti na širší vlnu nákupů v sektoru pamětí (DRAM/NAND), podpořenou zájmem velkých institucionálních investorů, jako jsou David Tepper a George Soros. Investoři se vracejí k dříve zasaženým AI jménům navzdory varováním TrendForce ohledně cyklické normalizace trhu.",
+      "thesis_impact": "Silná poptávka po vysokokapacitních pamětech pro AI akcelerátory nadále podporuje marže společnosti před prosincovým zveřejněním výsledků.",
+      "sources": [
+        {
+          "name": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/11/27/sandisk-jumps-10-as-investors-return-to-beaten-down-memory-stocks-micron-and-sk-hynix-rise-6-despite-trendforce-dram-warning/"
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "Technologie",
+      "signal_score": 3,
+      "sentiment": "Neutral",
+      "event_type": "Tržní šum & Technická korekce",
+      "headline": "Nvidia vynechává Black Friday rally po měsíčním propadu o 28 %",
+      "analysis": "Akcie společnosti Nvidia oslabily na 147,10 USD (-1,47 %), čímž zaostaly za širším tržním odrazem. Titul za poslední měsíc klesl o zhruba 28 % v důsledku vybírání zisků a obav z vyčerpání růstového tempa infrastruktury pro umělou inteligenci před dalšími testy v nadcházejícím týdnu.",
+      "thesis_impact": "Krátkodobá konsolidace odráží obezřetnost institucí vůči vysoké srovnávací základně budoucích tržeb z čipů Blackwell.",
+      "sources": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/nvidias-stock-has-tumbled-27-over-one-chaotic-month-the-next-big-test-lies-in-the-week-ahead-06449777"
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "Technologie",
+      "signal_score": 3,
+      "sentiment": "Bullish",
+      "event_type": "Strategická partnerství",
+      "headline": "Microsoft se připojuje k jednáním o AI datových centrech v Japonsku",
+      "analysis": "Microsoft (491,08 USD, +0,23 %) společně s Anthropic a Meta Platforms zahájil jednání o rozšiřování infrastruktury datových center a energetických kapacit v Japonsku. Cílem je zajistit stabilní dodávky výpočetního výkonu pro globální expanzi cloudových služeb Azure.",
+      "thesis_impact": "Investice do regionální infrastruktury upevňují pozici Microsoftu v Asii, zároveň však zvyšují kapitálové výdaje (CapEx) a vyžadují přísné sledování marží.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-meta-microsoft-join-ai-143801446.html"
+        }
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "company_name": "Constellation Energy Corporation",
+      "sector": "Energetika / Utility",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Konsolidace aktiv",
+      "headline": "CEG konsoliduje po dokončení prodeje 4,4GW aktiv v PJM",
+      "analysis": "Constellation Energy uzavřela na 234,15 USD (-0,48 %). Společnost nedávno dokončila prodej svých plynových aktiv v objemu 4,4 GW firmě LS Power za 5 miliard USD, což jí poskytuje flexibilitu pro další investice do čistých zdrojů a jaderné energetiky.",
+      "thesis_impact": "Optimalizace portfolia snižuje regulační rizika a posiluje rozvahu, avšak trh dočasně vstřebává dopad rotace kapitálu od energetických utilit zpět k technologiím.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/energy/articles/constellation-completes-5b-sale-4-163543407.html"
+        }
+      ]
+    },
+    {
+      "ticker": "VST",
+      "company_name": "Vistra Corp.",
+      "sector": "Energetika / Utility",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Sektorový výhled",
+      "headline": "Vistra drží stabilní pozici uprostřed proměnlivé poptávky po elektřině",
+      "analysis": "Akcie Vistra Corp. uzavřely na 121,64 USD (+0,26 %). Sektor utilit nadále těží z dlouhodobých kontraktů na dodávky elektřiny pro nové AI datová centra, přičemž analytici Morgan Stanley nadále vidí v sektoru významný dlouhodobý potenciál růstu.",
+      "thesis_impact": "Stabilní peněžní toky poskytují ochranu před tržní volatilitou, dokud přetrvává vysoké úrokové prostředí.",
+      "sources": [
+        {
+          "name": "TIKR / Yahoo Finance",
+          "url": "https://www.tikr.com/blog/vistra-has-slumped-for-a-year-why-morgan-stanley-still-sees-82-upside"
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "signal_score": 2,
+      "sentiment": "Neutral",
+      "event_type": "Regulační a provozní kontext",
+      "headline": "Alphabet čelí lokálním protestům a tlaku na AI expanzi",
+      "analysis": "Akcie Alphabet oslabily na 271,54 USD (-0,57 %). Společnost čelí rostoucímu odporu vůči své agresivní AI strategii a provozním incidentům autonomních vozidel Waymo, což však má na fundamentální valuaci pouze okrajový vliv.",
+      "thesis_impact": "Dlouhodobá investiční teze v oblasti vyhledávání a cloudu zůstává neotřesena, krátkodobý sentiment je však utlumen širší technologickou korekcí.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/google-faces-growing-backlash-over-144037030.html"
+        }
+      ]
+    },
+    {
+      "ticker": "NEE",
+      "company_name": "NextEra Energy, Inc.",
+      "sector": "Energetika / Utility",
+      "signal_score": 1,
+      "sentiment": "Neutral",
+      "event_type": "Tržní šum",
+      "headline": "NextEra Energy vykazuje minimální volatilitu během svátečního týdne",
+      "analysis": "Akcie NextEra Energy uzavřely na 84,88 USD (-0,62 %). Kolem společnosti se neobjevily žádné nové fundamentální zprávy; pohyb odráží běžnou likviditu a rotaci kapitálu v rámci defenzivního sektoru utilit.",
+      "thesis_impact": "Bez přímého dopadu na investiční tezi; titul slouží jako stabilní defenzivní prvek portfolia.",
+      "sources": [
+        {
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-cms-energy-cms-5-153008649.html"
+        }
+      ]
+    }
+  ],
+  "today_calendar": {
+    "macro_events": [
+      {
+        "time_cet": "19:00",
+        "event": "Zkrácené ukončení obchodování v USA (Early Close - Black Friday)",
+        "importance": "High",
+        "consensus": "—",
+        "previous": "—"
+      }
+    ],
+    "watchlist_earnings": []
+  }
+}

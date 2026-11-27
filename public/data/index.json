@@ -1,5 +1,18 @@
 [
   {
+    "edition_date": "2026-11-27",
+    "headline": "Black Friday na trzích: Short-covering rally po 6bilionovém výprodeji narazila na tvrdou realitu sazeb",
+    "market_regime": "Cautious / Rates-Driven",
+    "affected_tickers": [
+      "NVDA",
+      "MU",
+      "MSFT",
+      "CEG",
+      "VST"
+    ],
+    "has_critical_watchlist_event": true
+  },
+  {
     "edition_date": "2026-11-26",
     "headline": "Inflační setrvačnost a AI korekce: Trhy testují odolnost technologického sektoru",
     "market_regime": "Cautious / Rates-Driven",
